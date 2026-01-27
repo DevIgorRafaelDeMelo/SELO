@@ -1,17 +1,18 @@
 import "./App.css";
-import Hero from "./assets/Office.jpg";
+import Hero from "./assets/IMG_2716.jpg";
 import {
   FaBalanceScale,
   FaFileInvoiceDollar,
   FaRegBuilding,
 } from "react-icons/fa";
 import { BsCalculator } from "react-icons/bs";
-import grupoFuncionarios from "./assets/IMG_2676+.jpg";
+import grupoFuncionarios from "./assets/IMG_8332.jpg";
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaWhatsapp,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { useState } from "react";
 
@@ -55,16 +56,13 @@ export default function App() {
       </a>
       <header className="bg-black/60 fixed w-full top-0 z-40 shadow-lg backdrop-blur-sm">
         <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-          {/* Logo */}
-          <div className="flex items-center space-x-2 pb-2">
+          <div className="flex items-start space-x-2 pb-2">
             <img
               src={logo}
               alt="Logo Minha Empresa"
               className="h-10 w-auto drop-shadow-md"
             />
           </div>
-
-          {/* Menu Desktop */}
           <nav className="hidden md:flex space-x-8 text-gray-200 font-light tracking-wide">
             <a
               href="#suporte"
@@ -91,8 +89,6 @@ export default function App() {
               Produtos
             </a>
           </nav>
-
-          {/* Botão Hamburguer Mobile */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -123,8 +119,6 @@ export default function App() {
             </button>
           </div>
         </div>
-
-        {/* Menu Mobile Dropdown */}
         {isOpen && (
           <div className="md:hidden bg-black/90 backdrop-blur-sm px-6 py-6 space-y-4 text-gray-200 font-light tracking-wide animate-slide-down">
             <a
@@ -154,18 +148,12 @@ export default function App() {
           </div>
         )}
       </header>
-
-      <section
-        className="h-screen flex items-start justify-start bg-cover bg-center text-white relative"
-        style={{
-          backgroundImage: `url(${Hero})`,
-        }}
-      >
+      <section className="h-screen grid md:grid-cols-2 text-white relative bg-gradient-to-r from-gray-900 via-black to-gray-800">
         <div className="absolute inset-0 bg-gradient-to-tr from-black/10 via-gray-900/70 to-black/70"></div>
 
-        <div className="relative z-10 flex flex-col items-start text-left gap-10 px-6 md:px-12 pt-32 max-w-5xl animate-fadeIn">
-          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mt-[20vh]">
-            Selo{" "}
+        <div className="relative z-10 flex flex-col items-start text-left gap-10 px-6 md:px-12 pt-32 animate-fadeIn">
+          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mt-[10vh]">
+            Elo{" "}
             <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
               Contabilidade
             </span>
@@ -183,6 +171,14 @@ export default function App() {
             </span>
           </p>
         </div>
+
+        <div className="relative flex items-center justify-center">
+          <img
+            src={Hero}
+            alt="Tela de telefone"
+            className="w-full h-screen object-cover drop-shadow-2xl"
+          />
+        </div>
       </section>
       <section id="servicos" className="py-20 px-[12%] bg-gray-100 space-y-32">
         <div className="text-center mb-16">
@@ -196,7 +192,7 @@ export default function App() {
             financeira.
           </p>
         </div>
- 
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-3xl font-extrabold text-gray-900 mb-4 flex items-center gap-2">
@@ -239,7 +235,7 @@ export default function App() {
             </svg>
           </div>
         </div>
- 
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center order-2 md:order-1">
             <svg
@@ -282,7 +278,7 @@ export default function App() {
             </ul>
           </div>
         </div>
- 
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-3xl font-extrabold text-gray-900 mb-4 flex items-center gap-2">
@@ -379,8 +375,8 @@ export default function App() {
             </ul>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-green-500 hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl mb-6 shadow-md">
+          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition transform hover:-translate-y-2">
+            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-6 shadow-md">
               <FaBalanceScale size={28} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -396,8 +392,8 @@ export default function App() {
               <li>✔ Redução de riscos e penalidades</li>
             </ul>
           </div>
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-blue-500 hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl mb-6 shadow-md">
+          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition transform hover:-translate-y-2">
+            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-6 shadow-md">
               <FaFileInvoiceDollar size={28} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -413,8 +409,8 @@ export default function App() {
               <li>✔ Gestão de benefícios e obrigações</li>
             </ul>
           </div>
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-purple-500 hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-xl mb-6 shadow-md">
+          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition transform hover:-translate-y-2">
+            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-6 shadow-md">
               <FaRegBuilding size={28} />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -513,7 +509,7 @@ export default function App() {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+                className="bg-amber-400 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
               >
                 Enviar Mensagem
               </button>
@@ -522,7 +518,7 @@ export default function App() {
         </div>
       </section>
       <footer className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-12">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10">
           {/* Logo e descrição */}
           <div className="text-center md:text-left space-y-2">
             <img
@@ -536,7 +532,7 @@ export default function App() {
           </div>
 
           {/* Links de navegação */}
-          <nav className="flex flex-col md:flex-row justify-center items-center gap-6 text-sm font-light">
+          <nav className="flex flex-col md:flex-col justify-center items-start gap-3 text-sm font-light">
             <a href="#sobre" className="hover:text-amber-400 transition-colors">
               Sobre
             </a>
@@ -560,7 +556,21 @@ export default function App() {
             </a>
           </nav>
 
-          {/* Redes sociais e contato */}
+          {/* Endereço */}
+          <div className="text-center md:text-left space-y-2">
+            <h4 className="text-sm font-semibold text-amber-400 flex items-center gap-2">
+              <FaMapMarkerAlt /> Endereço
+            </h4>
+            <p className="text-gray-400 text-sm">
+              Rua Exemplo, 123
+              <br />
+              Centro – Dois Irmãos/RS
+              <br />
+              CEP 93950-000
+            </p>
+          </div>
+
+          {/* Redes sociais */}
           <div className="flex justify-center md:justify-end gap-4">
             <a
               href="https://facebook.com"
