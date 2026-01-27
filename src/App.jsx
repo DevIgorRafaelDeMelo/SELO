@@ -35,7 +35,7 @@ export default function App() {
         "T7BtuIvfmzu7RWtCO",
       )
       .then(
-        (result) => {
+        () => {
           alert("Mensagem enviada com sucesso!");
         },
         (error) => {
@@ -148,35 +148,63 @@ export default function App() {
           </div>
         )}
       </header>
-      <section className="h-screen grid md:grid-cols-2 text-white relative bg-gray-900 via-black to-gray-800">
-        <div className="absolute inset-0 bg-black"></div>
-        <div className="relative z-10 flex flex-col items-start text-left gap-8 px-8 md:px-16 justify-center h-full animate-fadeIn border-l-4 border-amber-500">
-          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
-            Elo{" "}
-            <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
+      <section className="h-screen grid md:grid-cols-2 text-white relative bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden">
+        {/* Overlay com gradiente suave */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+
+        <div className="relative z-10 flex flex-col items-start text-left gap-10 px-8 md:px-20 justify-center h-full animate-fadeIn">
+          {/* Título principal */}
+          <h2 className="text-6xl md:text-7xl font-extrabold tracking-tight leading-tight font-sans">
+            <span className="text-white">Elo</span>{" "}
+            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
               Contabilidade
             </span>
           </h2>
-          <h3 className="text-lg md:text-3xl text-gray-200 font-medium max-w-xl">
+
+          {/* Linha divisória elegante */}
+          <div className="w-24 h-1 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] rounded-full"></div>
+
+          {/* Subtítulo sofisticado */}
+          <h3 className="text-2xl md:text-3xl text-gray-300 font-serif italic max-w-xl">
             Parceiros estratégicos para o sucesso da sua empresa
           </h3>
-          <p className="text-gray-100 leading-relaxed text-lg md:text-xl font-light max-w-lg">
+
+          {/* Descrição com destaque */}
+          <p className="leading-relaxed text-lg md:text-xl font-light max-w-xl text-gray-400">
             Gestão financeira com{" "}
-            <span className="text-amber-400 font-semibold">transparência</span>{" "}
-            e <span className="text-amber-400 font-semibold">inovação</span>.{" "}
+            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-semibold">
+              transparência
+            </span>{" "}
+            e{" "}
+            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-semibold">
+              inovação
+            </span>
+            .
             <br />
-            <span className="text-gray-100 font-medium">
+            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-medium italic">
               Soluções contábeis para o crescimento do seu negócio.
             </span>
-          </p>{" "}
+          </p>
+
+          {/* Botão de ação */}
+          <div className="mt-6">
+            <a
+              href="#contato"
+              className="px-6 py-3 bg-[#956930] text-black font-semibold rounded-lg shadow-lg hover:opacity-90 transition-all duration-300"
+            >
+              Fale Conosco
+            </a>
+          </div>
         </div>
 
         <div className="relative flex items-center justify-center">
           <img
             src={Hero}
             alt="Tela de telefone"
-            className="w-full h-screen object-cover drop-shadow-2xl"
+            className="w-full h-screen object-cover drop-shadow-2xl transform hover:scale-105 transition-transform duration-700 ease-out"
           />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-amber-500/20 via-transparent to-transparent mix-blend-overlay"></div>
         </div>
       </section>
       <section id="servicos" className="py-20 px-[12%] bg-gray-100 space-y-32">
@@ -356,7 +384,6 @@ export default function App() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Card 1 */}
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
             <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
               <BsCalculator size={30} />
@@ -384,7 +411,6 @@ export default function App() {
             </ul>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
             <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
               <FaBalanceScale size={30} />
@@ -413,7 +439,6 @@ export default function App() {
             </ul>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
             <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
               <FaFileInvoiceDollar size={30} />
@@ -441,7 +466,6 @@ export default function App() {
             </ul>
           </div>
 
-          {/* Card 4 */}
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
             <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
               <FaRegBuilding size={30} />
