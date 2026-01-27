@@ -369,9 +369,9 @@ export default function App() {
               precisão e conformidade legal.
             </p>
             <ul className="space-y-2 text-gray-700 text-sm">
-              <li>✔ Lançamentos contábeis completos</li>
-              <li>✔ Demonstrações financeiras atualizadas</li>
-              <li>✔ Conformidade com normas fiscais</li>
+              <li>✔ Estruturação e organização societária</li>
+              <li>✔ Registro em órgãos competentes</li>
+              <li>✔ Adequação às normas legais</li>
             </ul>
           </div>
 
@@ -519,7 +519,6 @@ export default function App() {
       </section>
       <footer className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-12">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10">
-          {/* Logo e descrição */}
           <div className="text-center md:text-left space-y-2">
             <img
               src={logo}
@@ -531,7 +530,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Links de navegação */}
           <nav className="flex flex-col md:flex-col justify-center items-start gap-3 text-sm font-light">
             <a href="#sobre" className="hover:text-amber-400 transition-colors">
               Sobre
@@ -555,8 +553,6 @@ export default function App() {
               Contato
             </a>
           </nav>
-
-          {/* Endereço */}
           <div className="text-center md:text-left space-y-2">
             <h4 className="text-sm font-semibold text-amber-400 flex items-center gap-2">
               <FaMapMarkerAlt /> Endereço
@@ -570,7 +566,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Redes sociais */}
           <div className="flex justify-center md:justify-end gap-4">
             <a
               href="https://facebook.com"
@@ -606,8 +601,7 @@ export default function App() {
             </a>
           </div>
         </div>
-
-        {/* Direitos autorais */}
+ 
         <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
           &copy; {new Date().getFullYear()} Selo Contabilidade - Todos os
           direitos reservados.
