@@ -169,7 +169,6 @@ export default function App() {
               Soluções contábeis para o crescimento do seu negócio.
             </span>
           </p>{" "}
-          
         </div>
 
         <div className="relative flex items-center justify-center">
@@ -357,73 +356,116 @@ export default function App() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-6 shadow-md">
-              <BsCalculator size={28} />
+          {/* Card 1 */}
+          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+            <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
+              <BsCalculator size={30} />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Escrituração Contábil
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
+              Escrituração <br /> Contábil
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-6 leading-relaxed text-base">
               Registro e organização de todas as movimentações financeiras com
               precisão e conformidade legal.
             </p>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>✔ Estruturação e organização societária</li>
-              <li>✔ Registro em órgãos competentes</li>
-              <li>✔ Adequação às normas legais</li>
+            <ul className="space-y-3 text-gray-700 text-sm">
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Estruturação
+                e organização societária
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Registro em
+                órgãos competentes
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Adequação às
+                normas legais
+              </li>
             </ul>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-6 shadow-md">
-              <FaBalanceScale size={28} />
+          {/* Card 2 */}
+          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+            <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
+              <FaBalanceScale size={30} />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Consultoria Fiscal
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
+              Consultoria
+              <br /> Fiscal
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-6 leading-relaxed text-base">
               Estratégias para reduzir riscos tributários e otimizar a carga
               fiscal da sua empresa.
             </p>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>✔ Planejamento tributário personalizado</li>
-              <li>✔ Cumprimento das obrigações fiscais</li>
-              <li>✔ Redução de riscos e penalidades</li>
+            <ul className="space-y-3 text-gray-700 text-sm">
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Planejamento
+                tributário personalizado
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Cumprimento
+                das obrigações fiscais
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Redução de
+                riscos e penalidades
+              </li>
             </ul>
           </div>
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-6 shadow-md">
-              <FaFileInvoiceDollar size={28} />
+
+          {/* Card 3 */}
+          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+            <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
+              <FaFileInvoiceDollar size={30} />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
               Folha de Pagamento
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-6 leading-relaxed text-base">
               Administração completa da folha de pagamento com conformidade
               trabalhista e tranquilidade para sua equipe.
             </p>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>✔ Cálculo de salários e encargos</li>
-              <li>✔ Emissão de holerites</li>
-              <li>✔ Gestão de benefícios e obrigações</li>
+            <ul className="space-y-3 text-gray-700 text-sm">
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Cálculo de
+                salários e encargos
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Emissão de
+                holerites
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Gestão de
+                benefícios e obrigações
+              </li>
             </ul>
           </div>
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-6 shadow-md">
-              <FaRegBuilding size={28} />
+
+          {/* Card 4 */}
+          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-10 border border-gray-200 hover:border-amber-400 hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+            <div className="w-16 h-16 flex items-center justify-center bg-amber-500 text-white rounded-full mb-6 shadow-lg">
+              <FaRegBuilding size={30} />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
               Abertura de Empresas
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-6 leading-relaxed text-base">
               Apoio completo na abertura e regularização de empresas com
               segurança e agilidade.
             </p>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>✔ Orientação jurídica e fiscal</li>
-              <li>✔ Registro em órgãos competentes</li>
-              <li>✔ Adequação às normas legais</li>
+            <ul className="space-y-3 text-gray-700 text-sm">
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Orientação
+                jurídica e fiscal
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Registro em
+                órgãos competentes
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-amber-500 font-bold">➤</span> Adequação às
+                normas legais
+              </li>
             </ul>
           </div>
         </div>
