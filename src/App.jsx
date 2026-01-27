@@ -148,8 +148,8 @@ export default function App() {
           </div>
         )}
       </header>
-      <section className="h-screen grid md:grid-cols-2 text-white relative bg-gradient-to-r from-gray-900 via-black to-gray-800">
-        <div className="absolute inset-0 bg-gradient-to-tr from-black/10 via-gray-900/70 to-black/70"></div>
+      <section className="h-screen grid md:grid-cols-2 text-white relative bg-gray-900 via-black to-gray-800">
+        <div className="absolute inset-0 bg-black"></div>
 
         <div className="relative z-10 flex flex-col items-start text-left gap-10 px-6 md:px-12 pt-32 animate-fadeIn">
           <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mt-[10vh]">
