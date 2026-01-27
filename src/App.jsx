@@ -157,11 +157,9 @@ export default function App() {
               Contabilidade
             </span>
           </h2>
-
           <h3 className="text-lg md:text-3xl text-gray-200 font-medium max-w-xl">
             Parceiros estratégicos para o sucesso da sua empresa
           </h3>
-
           <p className="text-gray-100 leading-relaxed text-lg md:text-xl font-light max-w-lg">
             Gestão financeira com{" "}
             <span className="text-amber-400 font-semibold">transparência</span>{" "}
@@ -170,15 +168,8 @@ export default function App() {
             <span className="text-gray-100 font-medium">
               Soluções contábeis para o crescimento do seu negócio.
             </span>
-          </p>
-
-          {/* Botão de ação sofisticado */}
-          <a
-            href="#contato"
-            className="mt-6 inline-block bg-amber-500 hover:bg-amber-600 text-black font-semibold px-6 py-3 rounded-lg shadow-lg transition-transform transform hover:scale-105"
-          >
-            Fale Conosco
-          </a>
+          </p>{" "}
+          
         </div>
 
         <div className="relative flex items-center justify-center">
