@@ -150,18 +150,19 @@ export default function App() {
       </header>
       <section className="h-screen grid md:grid-cols-2 text-white relative bg-gray-900 via-black to-gray-800">
         <div className="absolute inset-0 bg-black"></div>
-
-        <div className="relative z-10 flex flex-col items-start text-left gap-10 px-6 md:px-12 pt-32 animate-fadeIn">
-          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mt-[10vh]">
+        <div className="relative z-10 flex flex-col items-start text-left gap-8 px-8 md:px-16 justify-center h-full animate-fadeIn border-l-4 border-amber-500">
+          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
             Elo{" "}
             <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
               Contabilidade
             </span>
           </h2>
-          <h3 className="text-lg md:text-3xl text-gray-200 font-medium">
+
+          <h3 className="text-lg md:text-3xl text-gray-200 font-medium max-w-xl">
             Parceiros estratégicos para o sucesso da sua empresa
           </h3>
-          <p className="text-gray-100 leading-relaxed text-lg md:text-xl font-light max-w-2xl">
+
+          <p className="text-gray-100 leading-relaxed text-lg md:text-xl font-light max-w-lg">
             Gestão financeira com{" "}
             <span className="text-amber-400 font-semibold">transparência</span>{" "}
             e <span className="text-amber-400 font-semibold">inovação</span>.{" "}
@@ -170,6 +171,14 @@ export default function App() {
               Soluções contábeis para o crescimento do seu negócio.
             </span>
           </p>
+
+          {/* Botão de ação sofisticado */}
+          <a
+            href="#contato"
+            className="mt-6 inline-block bg-amber-500 hover:bg-amber-600 text-black font-semibold px-6 py-3 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+          >
+            Fale Conosco
+          </a>
         </div>
 
         <div className="relative flex items-center justify-center">
@@ -601,7 +610,7 @@ export default function App() {
             </a>
           </div>
         </div>
- 
+
         <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
           &copy; {new Date().getFullYear()} Selo Contabilidade - Todos os
           direitos reservados.
