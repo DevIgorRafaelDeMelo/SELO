@@ -1,5 +1,5 @@
 import "./App.css";
-import Hero from "./assets/flat-lay-workstation-with-copy-space-stapler.jpg";
+import Hero from "./assets/top-view-workspace-with-notepad-copy-space.jpg";
 import { FaBook, FaUsersCog } from "react-icons/fa";
 import {
   FaRegLightbulb,
