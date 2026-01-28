@@ -93,6 +93,7 @@ export default function App() {
             </span>
             .
             <br />
+            <br />
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-medium italic">
               Parceiros estratégicos para o sucesso da sua empresa
             </span>
@@ -131,22 +132,21 @@ export default function App() {
           <div>
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
-              Escrituração Contábil
+              Estruturação e Regularização de Empresas
             </h3>
-            <p className="text-base text-gray-700 mb-4">
-              Registro e organização das movimentações financeiras com precisão
-              e conformidade legal.
-            </p>
+
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Lançamentos completos
+                <span className="text-[#cea664]"></span> Análise e enquadramento
+                societário e tributário;
               </li>
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Demonstrações
-                atualizadas
+                <span className="text-[#cea664]"></span> Estruturação de
+                Holdings e Offshores;
               </li>
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Conformidade fiscal
+                <span className="text-[#cea664]"></span> Registro em órgãos
+                competentes (Junta, Receita, Prefeitura etc.).
               </li>
             </ul>
           </div>
@@ -155,7 +155,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Card 2 */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center order-2 md:order-1">
             <FaBalanceScale className="h-16 w-16 text-[#cea664]" />
@@ -163,47 +162,121 @@ export default function App() {
           <div className="order-1 md:order-2">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
-              Consultoria Fiscal
+              Contabilidade Gerencial e Fiscal
             </h3>
-            <p className="text-base text-gray-700 mb-4">
-              Estratégia para reduzir riscos tributários e otimizar a carga
-              fiscal.
-            </p>
+
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Planejamento
-                personalizado
+                <span className="text-[#cea664]"></span> Escrituração contábil e
+                fiscal;
               </li>
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Obrigações fiscais
+                <span className="text-[#cea664]"></span> Apuração e envio de
+                tributos;
               </li>
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Redução de riscos
+                <span className="text-[#cea664]"></span> Relatórios e
+                demonstrativos gerenciais;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Acompanhamento de
+                indicadores de desempenho;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Atendimento consultivo
+                e personalizado.
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Card 3 */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
-              Folha de Pagamento
+              Soluções para Folha de Pagamento
             </h3>
-            <p className="text-base text-gray-700 mb-4">
-              Administração da folha de pagamento com conformidade trabalhista e
-              tranquilidade para sua equipe.
-            </p>
+
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Cálculo de salários
+                <span className="text-[#cea664]"></span> Cálculo da folha de
+                salários;
               </li>
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Emissão de holerites
+                <span className="text-[#cea664]"></span> Emissão de guias
+                trabalhistas (e-Social, FGTS, INSS etc.);
               </li>
               <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]">✔</span> Gestão de benefícios
+                <span className="text-[#cea664]"></span> Gestão de férias, 13º
+                salário e rescisões;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Suporte completo na
+                rotina trabalhista empresarial.
+              </li>
+            </ul>
+          </div>
+          <div className="flex justify-center">
+            <FaUsersCog className="h-16 w-16 text-[#cea664]" />
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="flex justify-center order-2 md:order-1">
+            <FaBalanceScale className="h-16 w-16 text-[#cea664]" />
+          </div>
+          <div className="order-1 md:order-2">
+            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+              <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
+              Consultoria Empresarial
+            </h3>
+
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Diagnóstico financeiro
+                e organizacional;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Estruturação de
+                processos e rotinas;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span>Apoio ao planejamento
+                estratégico;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Identificação de
+                melhorias e redução de custos;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Acompanhamento na
+                implementação de mudanças.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+              <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
+              Respaldo Tributário para Pessoas Físicas
+            </h3>
+
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Apuração de ganhos com
+                criptoativos;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span>Suporte tributário para
+                investimentos no Brasil e no exterior;
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Apuração de (GCAP,
+                Carnê-Leão, IRPF);
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-[#cea664]"></span> Orientação para
+                regularidade fiscal e prevenção de autuações.
               </li>
             </ul>
           </div>
@@ -277,7 +350,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="equipe" className="py-20  bg-gray-50">
+      <section id="equipe" className="pt-20  bg-gray-50">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
             Nossa Equipe
@@ -293,7 +366,7 @@ export default function App() {
           <img
             src={grupoFuncionarios}
             alt="Equipe Selo Contabilidade"
-            className="rounded-xl shadow-lg border-4 border-gray-200 max-w-5xl w-full object-cover h-[60vh] transition-transform duration-500"
+            className=" shadow-lg   w-full object-cover h-[80vh] transition-transform duration-500"
           />
         </div>
       </section>
@@ -306,7 +379,7 @@ export default function App() {
           <FaInstagram className="text-[#cea664] text-6xl mx-auto mb-6" />
 
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-            Acompanhe a Selo Contabilidade no Instagram
+            Acompanhe a Elo no Instagram
           </h2>
 
           <p className="max-w-2xl mx-auto mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -484,25 +557,25 @@ export default function App() {
             </a>
             <a
               href="#servicos"
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-[#cea664] transition-colors"
             >
               Serviços
             </a>
             <a
               href="#solucoes"
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-[#cea664] transition-colors"
             >
               Soluções
             </a>
             <a
               href="#contato"
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-[#cea664] transition-colors"
             >
               Contato
             </a>
           </nav>
           <div className="text-center md:text-left space-y-2">
-            <h4 className="text-sm font-semibold text-amber-400 flex items-center gap-2">
+            <h4 className="text-sm font-semibold text-[#cea664] flex items-center gap-2">
               <FaMapMarkerAlt /> Endereço
             </h4>
             <p className="text-gray-400 text-sm">
@@ -519,7 +592,7 @@ export default function App() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-amber-400 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
             >
               <FaFacebookF className="text-white hover:text-black" />
             </a>
@@ -527,7 +600,7 @@ export default function App() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-amber-400 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
             >
               <FaInstagram className="text-white hover:text-black" />
             </a>
@@ -535,7 +608,7 @@ export default function App() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-amber-400 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
             >
               <FaLinkedinIn className="text-white hover:text-black" />
             </a>
@@ -543,7 +616,7 @@ export default function App() {
               href="https://wa.link/l95yt6"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-amber-400 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
             >
               <FaWhatsapp className="text-white hover:text-black" />
             </a>

@@ -6,9 +6,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const linkClasses = ({ isActive }) =>
-    `hover:text-amber-400 transition-colors ${
-      isActive ? "text-amber-400 font-medium" : "text-gray-200"
+    `hover:text-[#cea664] transition-colors ${
+      isActive ? "text-[#cea664] font-medium" : "text-gray-200"
     }`;
+
+  // Função para fechar menu e rolar para o topo
+  const handleLinkClick = () => {
+    setIsOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <header className="bg-black/60 fixed w-full top-0 z-40 shadow-lg backdrop-blur-sm">
@@ -16,16 +22,28 @@ export default function Header() {
         <img src={logo} alt="Logo" className="h-10 w-auto drop-shadow-md" />
 
         <nav className="hidden md:flex space-x-8 font-light tracking-wide">
-          <NavLink to="/" className={linkClasses}>
+          <NavLink to="/" className={linkClasses} onClick={handleLinkClick}>
             Home
           </NavLink>
-          <NavLink to="/quem-somos" className={linkClasses}>
+          <NavLink
+            to="/quem-somos"
+            className={linkClasses}
+            onClick={handleLinkClick}
+          >
             Quem somos
           </NavLink>
-          <NavLink to="/servicos" className={linkClasses}>
+          <NavLink
+            to="/servicos"
+            className={linkClasses}
+            onClick={handleLinkClick}
+          >
             Serviços
           </NavLink>
-          <NavLink to="/contato" className={linkClasses}>
+          <NavLink
+            to="/contato"
+            className={linkClasses}
+            onClick={handleLinkClick}
+          >
             Contato
           </NavLink>
         </nav>
@@ -33,7 +51,7 @@ export default function Header() {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-200 hover:text-amber-400 focus:outline-none"
+            className="text-gray-200 hover:text-[#cea664] focus:outline-none"
           >
             <svg
               className="w-7 h-7"
@@ -61,29 +79,46 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Menu Mobile */}
       {isOpen && (
-        <div className="md:hidden bg-black/90 px-6 py-6 space-y-4 text-gray-200 font-light tracking-wide animate-slide-down">
+        <div className="md:hidden text-center font-light tracking-wide animate-slide-down rounded-b-xl shadow-lg">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${linkClasses({ isActive })} block text-lg py-4 px-4 rounded-lg hover:bg-[#cea664]/20 transition-all`
+            }
+            onClick={handleLinkClick}
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            to="/quem-somos"
+            className={({ isActive }) =>
+              `${linkClasses({ isActive })} block text-lg py-4  px-4 rounded-lg hover:bg-[#cea664]/20 transition-all`
+            }
+            onClick={handleLinkClick}
+          >
+            Quem somos
+          </NavLink>
+
           <NavLink
             to="/servicos"
-            className={linkClasses}
-            onClick={() => setIsOpen(false)}
+            className={({ isActive }) =>
+              `${linkClasses({ isActive })} block text-lg py-4  px-4 rounded-lg hover:bg-[#cea664]/20 transition-all`
+            }
+            onClick={handleLinkClick}
           >
             Serviços
           </NavLink>
+
           <NavLink
             to="/contato"
-            className={linkClasses}
-            onClick={() => setIsOpen(false)}
+            className={({ isActive }) =>
+              `${linkClasses({ isActive })} block text-lg py-4 mb-10 px-4 rounded-lg hover:bg-[#cea664]/20 transition-all`
+            }
+            onClick={handleLinkClick}
           >
             Contato
-          </NavLink>
-          <NavLink
-            to="/produtos"
-            className={linkClasses}
-            onClick={() => setIsOpen(false)}
-          >
-            Produtos
           </NavLink>
         </div>
       )}
