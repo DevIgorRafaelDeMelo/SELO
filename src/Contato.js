@@ -5,13 +5,6 @@ import { useState } from "react";
 import logo from "./assets/Simbulo.png";
 import React, { useRef } from "react";
 import {
-  FaBook,
-  FaBalanceScale,
-  FaUsersCog,
-  FaUsers,
-  FaRegLightbulb,
-  FaShieldAlt,
-  FaRocket,
   FaWhatsapp,
   FaFacebookF,
   FaInstagram,

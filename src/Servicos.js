@@ -15,7 +15,6 @@ import {
   FaLinkedinIn,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import Hero from "./assets/flat-lay-workstation-with-copy-space-stapler.jpg";
 import Header from "./Conponentes/Header";
 
 export default function Servicos() {
