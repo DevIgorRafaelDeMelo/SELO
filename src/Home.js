@@ -52,7 +52,7 @@ export default function App() {
         href="https://wa.me/5599999999999"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed z-100 bottom-4 right-4 inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+        className="fixed z-100 bottom-10 right-4 inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
       >
         <FaWhatsapp className="w-6 h-6 mr-2" />
         Fale Conosco no WhatsApp
@@ -69,9 +69,9 @@ export default function App() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
         <div className="relative z-10 flex flex-col items-start text-left gap-10 px-8 md:px-20 justify-center h-full animate-fadeIn">
-          <h2 className="text-6xl md:text-7xl font-bold tracking-tight leading-tight font-sans">
-            <span className="text-white">Elo</span>{" "}
-            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+          <h2 className="text-6xl md:text-7xl font-bold tracking-tight leading-tight font-sans whitespace-nowrap">
+            <span className="text-white inline-block">Elo</span>{" "}
+            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent inline-block">
               Soluções empresariais
             </span>
           </h2>
@@ -127,7 +127,6 @@ export default function App() {
           </p>
         </div>
 
-        {/* Card 1 */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
