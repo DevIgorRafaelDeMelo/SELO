@@ -49,7 +49,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <a
-        href="https://wa.me/5599999999999" // substitua pelo número da Elo Contabilidade
+        href="https://wa.me/5599999999999"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-100 bottom-4 right-4 inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
