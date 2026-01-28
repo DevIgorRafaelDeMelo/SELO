@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/Simbulo.png";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,6 @@ export default function Header() {
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <img src={logo} alt="Logo" className="h-10 w-auto drop-shadow-md" />
 
-        {/* Menu Desktop */}
         <nav className="hidden md:flex space-x-8 font-light tracking-wide">
           <NavLink to="/" className={linkClasses}>
             Home
@@ -29,18 +29,13 @@ export default function Header() {
           <NavLink to="/contato" className={linkClasses}>
             Contato
           </NavLink>
-          <NavLink to="/produtos" className={linkClasses}>
-            Produtos
-          </NavLink>
         </nav>
 
-        {/* Botão Mobile */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-gray-200 hover:text-amber-400 focus:outline-none"
           >
-            {/* Ícone hamburguer */}
             <svg
               className="w-7 h-7"
               fill="none"

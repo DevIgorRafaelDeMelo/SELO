@@ -21,6 +21,7 @@ import logo from "./assets/Simbulo.png";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Header from "./Conponentes/Header";
+
 export default function App() {
   const form = useRef();
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <a
+        href="https://wa.me/5599999999999" // substitua pelo número da Elo Contabilidade
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed z-100 bottom-4 right-4 inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+      >
+        <FaWhatsapp className="w-6 h-6 mr-2" />
+        Fale Conosco no WhatsApp
+      </a>
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <section className="h-screen grid md:grid-cols-2 text-white relative bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden">
@@ -98,7 +108,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Coluna da direita com overlay */}
         <div className="relative flex items-center justify-center">
           <div className="absolute inset-0 bg-gradient-to-t from-amber-500/20 via-transparent to-transparent mix-blend-overlay"></div>
         </div>
@@ -108,7 +117,6 @@ export default function App() {
         id="servicos"
         className="py-16 px-[10%] bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 text-gray-900 space-y-20"
       >
-        {/* Título */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold mb-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Serviços
