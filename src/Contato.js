@@ -3,7 +3,7 @@ import Header from "./Conponentes/Header";
 
 import { useState } from "react";
 import logo from "./assets/Simbulo.png";
-import React, { useRef } from "react";
+import React from "react";
 import {
   FaWhatsapp,
   FaFacebookF,
@@ -11,10 +11,8 @@ import {
   FaLinkedinIn,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import Hero from "./assets/flat-lay-workstation-with-copy-space-stapler.jpg";
 
 export default function Contato() {
-  const form = useRef();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section
@@ -44,9 +42,7 @@ export default function Contato() {
         </p>
       </div>
 
-      {/* Grid com informações e formulário */}
       <div className="grid md:grid-cols-2 gap-12 px-[8%]">
-        {/* Informações de contato */}
         <div className="space-y-8">
           <div className="flex items-center gap-4">
             <FaPhoneAlt className="text-[#cea664] text-2xl" />
@@ -76,7 +72,6 @@ export default function Contato() {
           </div>
         </div>
 
-        {/* Formulário */}
         <form className="bg-gray-800 rounded-xl shadow-lg p-8 space-y-6">
           <div>
             <label className="block text-sm font-medium mb-2">Nome</label>
