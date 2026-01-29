@@ -61,7 +61,7 @@ export default function App() {
       </a>
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      <section className="h-screen grid md:grid-cols-2 text-white relative bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden">
+      <section className="h-screen grid md:grid-cols-1 text-white relative bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden">
         <img
           src={Hero}
           alt="Background empresarial"
@@ -70,22 +70,22 @@ export default function App() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
-        <div className="relative z-10 flex flex-col items-start text-left gap-10 px-8 md:px-20 justify-center h-full animate-fadeIn">
-          <h2 className="text-6xl md:text-7xl font-bold tracking-tight leading-tight font-sans whitespace-nowrap">
-            <span className="text-white inline-block">Elo</span>{" "}
-            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent inline-block">
+        <div className="relative z-10 flex flex-col items-start text-left gap-8 px-4 sm:px-8 md:px-20 justify-center min-h-screen animate-fadeIn">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight font-sans">
+            <span className="text-white">Elo</span>{" "}
+            <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
               Soluções empresariais
             </span>
           </h2>
 
-          <div className="w-24 h-1 bg-[#956930] rounded-full"></div>
+          <div className="w-20 sm:w-24 h-1 bg-[#956930] rounded-full"></div>
 
-          <h3 className="text-2xl md:text-3xl text-gray-300 font-serif italic max-w-xl">
+          <h3 className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-serif italic max-w-xl">
             Inovação que conecta resultados
           </h3>
 
-          <p className="leading-relaxed text-lg md:text-xl font-light max-w-xl text-gray-400">
-            Gestão financeira com{" "}
+          <p className="leading-relaxed text-base sm:text-lg md:text-xl font-light max-w-xl text-gray-400">
+            Gestão contabil e financeira com{" "}
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-semibold">
               transparência
             </span>{" "}
@@ -93,9 +93,7 @@ export default function App() {
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-semibold">
               inovação
             </span>
-            .
-            <br />
-            <br />
+            .{" "}
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-medium italic">
               Parceiros estratégicos para o sucesso da sua empresa
             </span>
@@ -104,15 +102,11 @@ export default function App() {
           <div className="mt-6">
             <a
               href="#contato"
-              className="px-6 py-3 bg-[#956930] text-black font-semibold rounded-lg shadow-lg hover:opacity-90 transition-all duration-300"
+              className="px-5 sm:px-6 py-3 bg-[#956930] text-black font-semibold rounded-lg shadow-lg hover:opacity-90 transition-all duration-300"
             >
               Fale Conosco
             </a>
           </div>
-        </div>
-
-        <div className="relative flex items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-t from-amber-500/20 via-transparent to-transparent mix-blend-overlay"></div>
         </div>
       </section>
 
@@ -120,7 +114,6 @@ export default function App() {
         id="servicos"
         className="py-16 px-[10%] bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white space-y-20"
       >
-        {/* Título principal */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold mb-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Serviços
@@ -320,7 +313,8 @@ export default function App() {
           <img
             src={grupoFuncionarios}
             alt="Equipe Selo Contabilidade"
-            className="shadow-lg w-full object-cover h-[80vh] transition-transform duration-500 rounded-xl"
+            className="shadow-lg w-full object-cover   transition-transform duration-500
+                 h-auto md:h-[80vh]"
           />
         </div>
       </section>
@@ -543,29 +537,14 @@ export default function App() {
 
           <div className="flex justify-center md:justify-end gap-4">
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
-            >
-              <FaFacebookF className="text-white hover:text-black" />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/elosolucoesempresariais?igsh=Y3h4N25taWx0dzZi"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
             >
               <FaInstagram className="text-white hover:text-black" />
             </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
-            >
-              <FaLinkedinIn className="text-white hover:text-black" />
-            </a>
+
             <a
               href="https://wa.link/l95yt6"
               target="_blank"

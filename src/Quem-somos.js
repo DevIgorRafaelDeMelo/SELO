@@ -33,7 +33,7 @@ export default function QuemSomos() {
           <Header />
           <div className="h-[10vh]"></div>
           <div className="max-w-5xl mx-auto p-12">
-            <h1 className="text-5xl text-center font-extrabold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
+            <h1 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
               Quem Somos
             </h1>
 
@@ -52,19 +52,24 @@ export default function QuemSomos() {
               trabalhista, estruturação societária e consultoria empresarial.
               <br />
               <br />
-              <span className="font-semibold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              <span className="font-semibold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent"></span>{" "}
+              <h1 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
                 Missão
-              </span>{" "}
-              Oferecer soluções empresariais inovadoras e precisas, unindo
-              inteligência artificial e talento humano para impulsionar o
-              sucesso dos clientes.
+              </h1>
+              <p className="text-lg text-gray-100 leading-relaxed mb-10">
+                Oferecer soluções empresariais inovadoras e precisas, unindo
+                inteligência artificial e talento humano para impulsionar o
+                sucesso dos clientes.
+              </p>
               <br />
               <br />
-              <span className="font-semibold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              <h1 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
                 Visão
-              </span>{" "}
-              Ser referência em transformação digital, com foco em automação,
-              análise preditiva e integração inteligente de dados.
+              </h1>
+              <p className="text-lg text-gray-100 leading-relaxed mb-10">
+                Ser referência em transformação digital, com foco em automação,
+                análise preditiva e integração inteligente de dados.
+              </p>
             </p>
             <div className=" flex justify-center my-20">
               <img
@@ -74,7 +79,7 @@ export default function QuemSomos() {
               />
             </div>
 
-            <h1 className="text-5xl text-center font-extrabold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
+            <h1 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
               Valores
             </h1>
 
@@ -157,28 +162,12 @@ export default function QuemSomos() {
 
           <div className="flex justify-center md:justify-end gap-4">
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
-            >
-              <FaFacebookF className="text-white hover:text-black" />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/elosolucoesempresariais?igsh=Y3h4N25taWx0dzZi"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
             >
               <FaInstagram className="text-white hover:text-black" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
-            >
-              <FaLinkedinIn className="text-white hover:text-black" />
             </a>
             <a
               href="https://wa.link/l95yt6"

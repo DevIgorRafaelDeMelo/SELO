@@ -57,6 +57,8 @@ export default function Contato() {
             <div>
               <h4 className="font-bold">E-mail</h4>
               <p className="text-gray-400">contabilelogerencia@gmail.com</p>
+              <p className="text-gray-400">elocontabilfinanceiro@gmail.com </p>
+              <p className="text-gray-400">elocontabilcont1@gmail.com</p>
             </div>
           </div>
 
@@ -160,29 +162,14 @@ export default function Contato() {
 
           <div className="flex justify-center md:justify-end gap-4">
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
-            >
-              <FaFacebookF className="text-white hover:text-black" />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/elosolucoesempresariais?igsh=Y3h4N25taWx0dzZi"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
             >
               <FaInstagram className="text-white hover:text-black" />
             </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
-            >
-              <FaLinkedinIn className="text-white hover:text-black" />
-            </a>
+
             <a
               href="https://wa.link/l95yt6"
               target="_blank"
