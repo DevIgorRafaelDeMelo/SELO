@@ -1,13 +1,34 @@
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Header from "./Conponentes/Header";
-
 import { useState } from "react";
 import logo from "./assets/Simbulo.png";
-import React from "react";
+import React, { useRef } from "react";
 import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 export default function Contato() {
+  const form = useRef();
   const [isOpen, setIsOpen] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_oy8n6y5",
+        "template_hqia079",
+        form.current,
+        "3ZNn1Wm8YtupNsSu0",
+      )
+      .then(
+        () => {
+          alert("Mensagem enviada com sucesso!");
+        },
+        (error) => {
+          alert("Erro ao enviar mensagem: " + error.text);
+        },
+      );
+  };
   return (
     <section
       id="contato"
@@ -68,40 +89,58 @@ export default function Contato() {
           </div>
         </div>
 
-        <form className="bg-gray-800 rounded-xl shadow-lg p-8 space-y-6">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="bg-gray-800 shadow-lg rounded-lg p-8 space-y-6"
+        >
           <div>
-            <label className="block text-sm font-medium mb-2">Nome</label>
+            <label className="block text-gray-300 font-semibold mb-2">
+              Nome
+            </label>
             <input
               type="text"
-              className="w-full px-4 py-2 rounded-lg bg-gray-900 text-white focus:ring-2 focus:ring-[#cea664] outline-none"
+              name="user_name"
               placeholder="Seu nome"
+              className="w-full border border-gray-600 rounded-lg px-4 py-2 bg-black text-white focus:outline-none focus:ring-2 focus:ring-[#cea664]"
+              required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">E-mail</label>
+            <label className="block text-gray-300 font-semibold mb-2">
+              E-mail
+            </label>
             <input
               type="email"
-              className="w-full px-4 py-2 rounded-lg bg-gray-900 text-white focus:ring-2 focus:ring-[#cea664] outline-none"
-              placeholder="Seu e-mail"
+              name="user_email"
+              placeholder="seuemail@exemplo.com"
+              className="w-full border border-gray-600 rounded-lg px-4 py-2 bg-black text-white focus:outline-none focus:ring-2 focus:ring-[#cea664]"
+              required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">Mensagem</label>
+            <label className="block text-gray-300 font-semibold mb-2">
+              Mensagem
+            </label>
             <textarea
-              rows="4"
-              className="w-full px-4 py-2 rounded-lg bg-gray-900 text-white focus:ring-2 focus:ring-[#cea664] outline-none"
-              placeholder="Escreva sua mensagem..."
+              name="message"
+              rows="5"
+              placeholder="Digite sua mensagem..."
+              className="w-full border border-gray-600 rounded-lg px-4 py-2 bg-black text-white focus:outline-none focus:ring-2 focus:ring-[#cea664]"
+              required
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            className="w-full py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black font-semibold rounded-lg shadow-lg hover:opacity-90 transition-all duration-300"
-          >
-            Enviar Mensagem
-          </button>
+          <div className="text-center">
+            <button
+              type="submit"
+              className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:opacity-90 transition duration-300"
+            >
+              Enviar Mensagem
+            </button>
+          </div>
         </form>
       </div>
 

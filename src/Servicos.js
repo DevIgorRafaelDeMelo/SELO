@@ -45,9 +45,7 @@ export default function Servicos() {
           </p>
         </div>
 
-        {/* Cards container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Estruturação e Regularização de Empresas */}
           <div className="bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-amber-500/30 transition-transform duration-300">
             <FaBook className="h-16 w-16 text-[#cea664] mb-4" />
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
@@ -64,7 +62,6 @@ export default function Servicos() {
             </ul>
           </div>
 
-          {/* Contabilidade Gerencial e Fiscal */}
           <div className="bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-amber-500/30 transition-transform duration-300">
             <FaBalanceScale className="h-16 w-16 text-[#cea664] mb-4" />
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
@@ -80,7 +77,6 @@ export default function Servicos() {
             </ul>
           </div>
 
-          {/* Soluções para Folha de Pagamento */}
           <div className="bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-amber-500/30 transition-transform duration-300">
             <FaUsersCog className="h-16 w-16 text-[#cea664] mb-4" />
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
@@ -103,10 +99,7 @@ export default function Servicos() {
               <h3 className="text-2xl font-bold mb-3">
                 Consultoria Empresarial
               </h3>
-              <p className="text-gray-400 mb-4">
-                Apoio estratégico para melhorar processos, reduzir custos e
-                aumentar a eficiência organizacional.
-              </p>
+
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>Diagnóstico financeiro e organizacional</li>
                 <li>Estruturação de processos e rotinas</li>
@@ -114,6 +107,10 @@ export default function Servicos() {
                 <li>Redução de custos</li>
                 <li>Implementação de melhorias</li>
               </ul>
+              <p className="text-gray-400 mb-4">
+                Apoio estratégico para melhorar processos, reduzir custos e
+                aumentar a eficiência organizacional.
+              </p>
             </div>
 
             <div className="bg-gray-800 rounded-xl w-full md:w-1/2 lg:w-1/3 shadow-lg p-8 flex flex-col items-center text-center hover:shadow-amber-500/30 transition-transform duration-300">
@@ -121,16 +118,17 @@ export default function Servicos() {
               <h3 className="text-2xl font-bold mb-3">
                 Respaldo Tributário para Pessoas Físicas
               </h3>
-              <p className="text-gray-400 mb-4">
-                Orientação completa para manter sua regularidade fiscal e evitar
-                autuações.
-              </p>
+
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>Apuração de ganhos com criptoativos</li>
                 <li>Suporte para investimentos no Brasil e exterior</li>
                 <li>Apuração de GCAP, Carnê-Leão e IRPF</li>
                 <li>Prevenção de autuações fiscais</li>
               </ul>
+              <p className="text-gray-400 mb-4">
+                Orientação completa para manter sua regularidade fiscal e evitar
+                autuações.
+              </p>
             </div>
           </div>
         </div>
@@ -254,7 +252,7 @@ export default function Servicos() {
             </a>
 
             <a
-              href="https://wa.link/l95yt6"
+              href="wa.me/elosolucoesempresariais"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"

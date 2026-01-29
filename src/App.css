@@ -16,3 +16,9 @@
   width: max-content;
   animation: scroll 30s linear infinite;
 }
+
+.logo-img {
+  height: 80px; /* tamanho padronizado */
+  object-fit: contain; /* mantém proporção */
+  filter: brightness(0) saturate(100%) invert(70%) contrast(90%);
+}

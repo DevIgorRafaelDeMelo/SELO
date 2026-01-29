@@ -16,6 +16,11 @@ import {
   FaChartLine,
   FaFileInvoiceDollar,
 } from "react-icons/fa";
+import Fada from "./assets/Fada.png";
+import Branding from "./assets/Branding.png";
+import Estilize from "./assets/Estilze.png";
+import Pino from "./assets/Pino.png";
+import Savale from "./assets/savale.png";
 import { useState } from "react";
 import logo from "./assets/Simbulo.png";
 import React, { useRef } from "react";
@@ -31,10 +36,10 @@ export default function App() {
 
     emailjs
       .sendForm(
-        "service_w9qdez6",
-        "template_scwfvel",
+        "service_oy8n6y5",
+        "template_hqia079",
         form.current,
-        "T7BtuIvfmzu7RWtCO",
+        "3ZNn1Wm8YtupNsSu0",
       )
       .then(
         () => {
@@ -49,7 +54,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <a
-        href="https://wa.me/5599999999999"
+        href="https://wa.me/elosolucoesempresariais"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-100 bottom-10 right-4 inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
@@ -83,7 +88,7 @@ export default function App() {
           </h3>
 
           <p className="leading-relaxed text-base sm:text-lg md:text-xl font-light max-w-xl text-gray-400">
-            Gestão contabil e financeira com{" "}
+            Gestão contábil e financeira com{" "}
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-semibold">
               transparência
             </span>{" "}
@@ -301,7 +306,7 @@ export default function App() {
             Nossa Equipe
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Conheça o grupo de profissionais que faz a Selo Contabilidade ser
+            Conheça o grupo de profissionais que faz a Elo Contabilidade ser
             referência em transparência, inovação e dedicação ao crescimento da
             sua empresa
           </p>
@@ -311,7 +316,7 @@ export default function App() {
           <img
             src={grupoFuncionarios}
             alt="Equipe Selo Contabilidade"
-            className="shadow-lg w-full object-cover rounded-xl transition-transform duration-500
+            className="shadow-lg w-full object-cover transition-transform duration-500
                  h-auto md:h-[80vh]"
           />
         </div>
@@ -367,57 +372,71 @@ export default function App() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-              alt="Amazon"
-              className="h-8 md:h-10 object-contain mb-4"
-            />
-            <h3 className="text-lg font-bold text-white">Amazon</h3>
-            <p className="text-gray-400 text-sm mt-2 text-center">
-              Parceiro em soluções digitais e tecnologia.
-            </p>
-          </div>
-
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
-              alt="Apple"
-              className="h-8 md:h-10 object-contain mb-4"
-            />
-            <h3 className="text-lg font-bold text-white">Apple</h3>
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-2">
+          {/* Card 1 */}
+          <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
+            <img src={Fada} alt="Amazon" className="logo-img mb-4" />
+            <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              Fáda dos Florais
+            </h3>
             <p className="text-gray-400 text-sm mt-2 text-center">
               Inovação e design aplicados ao mundo corporativo.
             </p>
           </div>
 
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-              alt="Microsoft"
-              className="h-8 md:h-10 object-contain mb-4"
-            />
-            <h3 className="text-lg font-bold text-white">Microsoft</h3>
+          {/* Card 2 */}
+          <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
+            <img src={Branding} alt="Apple" className="logo-img mb-4" />
+            <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              Branding <br />
+              Que
+              <br /> comunica
+            </h3>
+            <p className="text-gray-400 text-sm mt-2 text-center">
+              Inovação e design aplicados ao mundo corporativo.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
+            <img src={Pino} alt="Microsoft" className="logo-img mb-4" />
+            <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              Pino
+              <br />
+              Desde 1964
+            </h3>
             <p className="text-gray-400 text-sm mt-2 text-center">
               Parceiro estratégico em soluções corporativas e cloud.
             </p>
           </div>
 
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-              alt="Google"
-              className="h-8 md:h-10 object-contain mb-4"
-            />
-            <h3 className="text-lg font-bold text-white">Google</h3>
+          {/* Card 4 */}
+          <div className="bg-gradient-to-b  from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
+            <img src={Savale} alt="Google" className="logo-img mb-4" />
+            <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              Savale
+              <br />
+              Imoveis
+            </h3>
+            <p className="text-gray-400 text-sm mt-2 text-center">
+              Parceiro em inteligência de dados e inovação digital.
+            </p>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
+            <img src={Estilize} alt="Google" className="logo-img mb-4" />
+            <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              Estilize
+              <br />
+              Moveis
+            </h3>
             <p className="text-gray-400 text-sm mt-2 text-center">
               Parceiro em inteligência de dados e inovação digital.
             </p>
           </div>
         </div>
       </section>
-
       <section className="bg-gradient-to-r from-black via-gray-900 to-black py-16 text-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-extrabold mb-6 text-center bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -544,7 +563,7 @@ export default function App() {
             </a>
 
             <a
-              href="https://wa.link/l95yt6"
+              href="wa.me/elosolucoesempresariais"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
