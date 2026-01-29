@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./Conponentes/Header";
 import bgImage from "./assets/flat-lay-workstation-with-copy-space-stapler.jpg";
-import bgequipe from "./assets/IMG_8332.jpg";
 import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import logo from "./assets/Simbulo.png";
 
