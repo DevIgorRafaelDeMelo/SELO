@@ -77,7 +77,7 @@ export default function App() {
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight font-sans">
             <span className="text-white">Elo</span>{" "}
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-              Soluções empresariais
+              Soluções Empresariais
             </span>
           </h2>
 
@@ -127,7 +127,6 @@ export default function App() {
           </p>
         </div>
 
-        {/* Estruturação e Regularização de Empresas */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
@@ -148,7 +147,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Contabilidade Gerencial e Fiscal */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <FaBalanceScale className="h-16 w-16 text-[#cea664]" />
@@ -168,7 +166,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Soluções para Folha de Pagamento */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
@@ -189,7 +186,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Consultoria Empresarial */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <FaChartLine className="h-16 w-16 text-[#cea664]" />
@@ -209,7 +205,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Respaldo Tributário para Pessoas Físicas */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
@@ -238,7 +233,7 @@ export default function App() {
         className="py-20 px-20 bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white"
       >
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4">
+          <h2 className="text-4xl font-bold mb-4">
             Por que escolher a{" "}
             <span className="bg-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
               Elo
@@ -306,9 +301,9 @@ export default function App() {
             Nossa Equipe
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Conheça o grupo de profissionais que faz a Elo Contabilidade ser
-            referência em transparência, inovação e dedicação ao crescimento da
-            sua empresa
+            Conheça o grupo de profissionais que faz a Elo Soluções Empresariais
+            ser referência em transparência, inovação e dedicação ao crescimento
+            da sua empresa
           </p>
         </div>
 
@@ -376,12 +371,11 @@ export default function App() {
           {/* Card 1 */}
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Fada} alt="Amazon" className="logo-img mb-4" />
-            <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-              Fáda dos Florais
+            <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              Fáda
+              <br />
+              Dos <br /> Florais
             </h3>
-            <p className="text-gray-400 text-sm mt-2 text-center">
-              Inovação e design aplicados ao mundo corporativo.
-            </p>
           </div>
 
           {/* Card 2 */}

@@ -107,6 +107,7 @@ export default function Servicos() {
                 <li>Redução de custos</li>
                 <li>Implementação de melhorias</li>
               </ul>
+              <br />
               <p className="text-gray-400 mb-4">
                 Apoio estratégico para melhorar processos, reduzir custos e
                 aumentar a eficiência organizacional.
@@ -125,6 +126,7 @@ export default function Servicos() {
                 <li>Apuração de GCAP, Carnê-Leão e IRPF</li>
                 <li>Prevenção de autuações fiscais</li>
               </ul>
+              <br />
               <p className="text-gray-400 mb-4">
                 Orientação completa para manter sua regularidade fiscal e evitar
                 autuações.

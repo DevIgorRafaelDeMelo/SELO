@@ -31,9 +31,9 @@ export default function QuemSomos() {
               Quem Somos
             </h1>
 
-            <p className="text-lg text-gray-100 leading-relaxed mb-10">
+            <p className="text-lg text-gray-100 leading-relaxed mb-10 text-center">
               A{" "}
-              <span className="font-semibold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              <span className="font-semibold text-center bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
                 Elo Soluções Empresariais
               </span>{" "}
               vai além de um escritório de contabilidade — somos parceiros
@@ -55,8 +55,6 @@ export default function QuemSomos() {
                 inteligência artificial e talento humano para impulsionar o
                 sucesso dos clientes.
               </p>
-              <br />
-              <br />
               <h1 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
                 Visão
               </h1>
@@ -65,19 +63,12 @@ export default function QuemSomos() {
                 análise preditiva e integração inteligente de dados.
               </p>
             </p>
-            <div className=" flex justify-center my-20">
-              <img
-                src={bgequipe}
-                alt="Imagem ilustrativa"
-                className="w-[80vh]   h-auto rounded-xl shadow-lg"
-              />
-            </div>
 
             <h1 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent drop-shadow-lg">
               Valores
             </h1>
 
-            <p className="text-lg text-gray-100 leading-relaxed mb-10">
+            <p className="text-lg text-center text-gray-100 leading-relaxed mb-10">
               A Inovação com responsabilidade: buscamos a inovação constante em
               todos os aspectos do nosso trabalho, sempre com prudência e foco
               na segurança dos nossos clientes.
