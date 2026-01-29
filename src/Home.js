@@ -303,7 +303,7 @@ export default function App() {
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Conheça o grupo de profissionais que faz a Selo Contabilidade ser
             referência em transparência, inovação e dedicação ao crescimento da
-            sua empresa.
+            sua empresa
           </p>
         </div>
 
