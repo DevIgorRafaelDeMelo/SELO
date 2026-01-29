@@ -118,7 +118,7 @@ export default function App() {
         className="py-16 px-[10%] bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white space-y-20"
       >
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold mb-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Serviços
           </h2>
           <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -301,7 +301,7 @@ export default function App() {
         className="pt-20 bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white"
       >
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Nossa Equipe
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -328,7 +328,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto text-center px-6">
           <FaInstagram className="text-[#cea664] text-6xl mx-auto mb-6" />
 
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Acompanhe a Elo no Instagram
           </h2>
 
@@ -354,7 +354,7 @@ export default function App() {
         className="py-20 px-[8%] bg-gradient-to-r from-black via-gray-900 to-black text-white"
       >
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Nossos Parceiros
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -390,9 +390,6 @@ export default function App() {
               Que
               <br /> comunica
             </h3>
-            <p className="text-gray-400 text-sm mt-2 text-center">
-              Inovação e design aplicados ao mundo corporativo.
-            </p>
           </div>
 
           {/* Card 3 */}
@@ -403,9 +400,6 @@ export default function App() {
               <br />
               Desde 1964
             </h3>
-            <p className="text-gray-400 text-sm mt-2 text-center">
-              Parceiro estratégico em soluções corporativas e cloud.
-            </p>
           </div>
 
           {/* Card 4 */}
@@ -416,9 +410,6 @@ export default function App() {
               <br />
               Imoveis
             </h3>
-            <p className="text-gray-400 text-sm mt-2 text-center">
-              Parceiro em inteligência de dados e inovação digital.
-            </p>
           </div>
 
           {/* Card 5 */}
@@ -429,15 +420,12 @@ export default function App() {
               <br />
               Moveis
             </h3>
-            <p className="text-gray-400 text-sm mt-2 text-center">
-              Parceiro em inteligência de dados e inovação digital.
-            </p>
           </div>
         </div>
       </section>
       <section className="bg-gradient-to-r from-black via-gray-900 to-black py-16 text-white">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-extrabold mb-6 text-center bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Entre em Contato
           </h2>
           <p className="text-lg text-gray-300 mb-10 text-center max-w-2xl mx-auto">
