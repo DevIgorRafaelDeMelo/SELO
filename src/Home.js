@@ -126,6 +126,9 @@ export default function App() {
             com experiência, tecnologia e transparência.
           </p>
         </div>
+        <br />
+        <br />
+        <br />
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col items-center justify-center h-full text-center">
