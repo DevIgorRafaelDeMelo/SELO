@@ -146,13 +146,14 @@ export default function App() {
             </ul>
           </div>
           <div className="flex justify-center">
-            <FaBook className="h-16 w-16 text-[#cea664]" />
+            <FaBalanceScale className="h-16 w-16 text-[#cea664]" />
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
-            <FaBalanceScale className="h-16 w-16 text-[#cea664]" />
+            {" "}
+            <FaBook className="h-16 w-16 text-[#cea664]" />
           </div>
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
