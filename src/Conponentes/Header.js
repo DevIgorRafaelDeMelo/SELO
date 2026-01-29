@@ -10,7 +10,6 @@ export default function Header() {
       isActive ? "text-[#cea664] font-medium" : "text-gray-200"
     }`;
 
-  // Função para fechar menu e rolar para o topo
   const handleLinkClick = () => {
     setIsOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -19,7 +18,7 @@ export default function Header() {
   return (
     <header className="bg-black/60 fixed w-full top-0 z-40 shadow-lg backdrop-blur-sm">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-        <img src={logo} alt="Logo" className="h-10 w-auto drop-shadow-md" />
+        <img src={logo} alt="Logo" className="h-6 m-4 w-auto drop-shadow-md" />
 
         <nav className="hidden md:flex space-x-8 font-light tracking-wide">
           <NavLink to="/" className={linkClasses} onClick={handleLinkClick}>
