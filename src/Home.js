@@ -10,9 +10,7 @@ import {
 } from "react-icons/fa";
 import grupoFuncionarios from "./assets/IMG_8332.jpg";
 import {
-  FaFacebookF,
   FaInstagram,
-  FaLinkedinIn,
   FaWhatsapp,
   FaMapMarkerAlt,
   FaChartLine,
@@ -313,7 +311,7 @@ export default function App() {
           <img
             src={grupoFuncionarios}
             alt="Equipe Selo Contabilidade"
-            className="shadow-lg w-full object-cover   transition-transform duration-500
+            className="shadow-lg w-full object-cover rounded-xl transition-transform duration-500
                  h-auto md:h-[80vh]"
           />
         </div>

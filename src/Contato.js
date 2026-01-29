@@ -4,13 +4,7 @@ import Header from "./Conponentes/Header";
 import { useState } from "react";
 import logo from "./assets/Simbulo.png";
 import React from "react";
-import {
-  FaWhatsapp,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contato() {
   const [isOpen, setIsOpen] = useState(false);
