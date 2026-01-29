@@ -48,7 +48,7 @@ export default function Contato() {
             <FaPhoneAlt className="text-[#cea664] text-2xl" />
             <div>
               <h4 className="font-bold">Telefone</h4>
-              <p className="text-gray-400">(51) 99999-9999</p>
+              <p className="text-gray-400">(51) 99977-7981</p>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export default function Contato() {
             <FaEnvelope className="text-[#cea664] text-2xl" />
             <div>
               <h4 className="font-bold">E-mail</h4>
-              <p className="text-gray-400">contato@elo.com.br</p>
+              <p className="text-gray-400">contabilelogerencia@gmail.com</p>
             </div>
           </div>
 

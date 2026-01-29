@@ -15,6 +15,8 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
   FaMapMarkerAlt,
+  FaChartLine,
+  FaFileInvoiceDollar,
 } from "react-icons/fa";
 import { useState } from "react";
 import logo from "./assets/Simbulo.png";
@@ -116,37 +118,32 @@ export default function App() {
 
       <section
         id="servicos"
-        className="py-16 px-[10%] bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 text-gray-900 space-y-20"
+        className="py-16 px-[10%] bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white space-y-20"
       >
+        {/* Título principal */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold mb-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Serviços
           </h2>
-          <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Soluções contábeis modernas para apoiar o crescimento da sua empresa
             com experiência, tecnologia e transparência.
           </p>
         </div>
 
+        {/* Estruturação e Regularização de Empresas */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+          <div className="flex flex-col items-center justify-center h-full text-center">
+            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
               Estruturação e Regularização de Empresas
             </h3>
-
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Análise e enquadramento
-                societário e tributário;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Estruturação de
-                Holdings e Offshores;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Registro em órgãos
-                competentes (Junta, Receita, Prefeitura etc.).
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>Análise e enquadramento societário e tributário;</li>
+              <li>Estruturação de Holdings e Offshores;</li>
+              <li>
+                Registro em órgãos competentes (Junta, Receita, Prefeitura
+                etc.).
               </li>
             </ul>
           </div>
@@ -155,140 +152,94 @@ export default function App() {
           </div>
         </div>
 
+        {/* Contabilidade Gerencial e Fiscal */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="flex justify-center order-2 md:order-1">
+          <div className="flex justify-center">
             <FaBalanceScale className="h-16 w-16 text-[#cea664]" />
           </div>
-          <div className="order-1 md:order-2">
-            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+          <div className="flex flex-col items-center justify-center h-full text-center">
+            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
               Contabilidade Gerencial e Fiscal
             </h3>
-
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Escrituração contábil e
-                fiscal;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Apuração e envio de
-                tributos;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Relatórios e
-                demonstrativos gerenciais;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Acompanhamento de
-                indicadores de desempenho;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Atendimento consultivo
-                e personalizado.
-              </li>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>Escrituração contábil e fiscal;</li>
+              <li>Apuração e envio de tributos;</li>
+              <li>Relatórios e demonstrativos gerenciais;</li>
+              <li>Acompanhamento de indicadores de desempenho;</li>
+              <li>Atendimento consultivo e personalizado.</li>
             </ul>
           </div>
         </div>
 
+        {/* Soluções para Folha de Pagamento */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+          <div className="flex flex-col items-center justify-center h-full text-center">
+            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
               Soluções para Folha de Pagamento
             </h3>
-
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Cálculo da folha de
-                salários;
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>Cálculo da folha de salários;</li>
+              <li>
+                Emissão de guias trabalhistas (e-Social, FGTS, INSS etc.);
               </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Emissão de guias
-                trabalhistas (e-Social, FGTS, INSS etc.);
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Gestão de férias, 13º
-                salário e rescisões;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Suporte completo na
-                rotina trabalhista empresarial.
-              </li>
+              <li>Gestão de férias, 13º salário e rescisões;</li>
+              <li>Suporte completo na rotina trabalhista empresarial.</li>
             </ul>
           </div>
           <div className="flex justify-center">
             <FaUsersCog className="h-16 w-16 text-[#cea664]" />
           </div>
         </div>
+
+        {/* Consultoria Empresarial */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="flex justify-center order-2 md:order-1">
-            <FaBalanceScale className="h-16 w-16 text-[#cea664]" />
+          <div className="flex justify-center">
+            <FaChartLine className="h-16 w-16 text-[#cea664]" />
           </div>
-          <div className="order-1 md:order-2">
-            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+          <div className="flex flex-col items-center justify-center h-full text-center">
+            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
               Consultoria Empresarial
             </h3>
-
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Diagnóstico financeiro
-                e organizacional;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Estruturação de
-                processos e rotinas;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span>Apoio ao planejamento
-                estratégico;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Identificação de
-                melhorias e redução de custos;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Acompanhamento na
-                implementação de mudanças.
-              </li>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>Diagnóstico financeiro e organizacional;</li>
+              <li>Estruturação de processos e rotinas;</li>
+              <li>Apoio ao planejamento estratégico;</li>
+              <li>Identificação de melhorias e redução de custos;</li>
+              <li>Acompanhamento na implementação de mudanças.</li>
             </ul>
           </div>
         </div>
+
+        {/* Respaldo Tributário para Pessoas Físicas */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+          <div className="flex flex-col items-center justify-center h-full text-center">
+            <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
               Respaldo Tributário para Pessoas Físicas
             </h3>
-
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Apuração de ganhos com
-                criptoativos;
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>Apuração de ganhos com criptoativos;</li>
+              <li>
+                Suporte tributário para investimentos no Brasil e no exterior;
               </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span>Suporte tributário para
-                investimentos no Brasil e no exterior;
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Apuração de (GCAP,
-                Carnê-Leão, IRPF);
-              </li>
-              <li className="flex items-center gap-2 text-gray-700">
-                <span className="text-[#cea664]"></span> Orientação para
-                regularidade fiscal e prevenção de autuações.
+              <li>Apuração de GCAP, Carnê-Leão, IRPF;</li>
+              <li>
+                Orientação para regularidade fiscal e prevenção de autuações.
               </li>
             </ul>
           </div>
           <div className="flex justify-center">
-            <FaUsersCog className="h-16 w-16 text-[#cea664]" />
+            <FaFileInvoiceDollar className="h-16 w-16 text-[#cea664]" />
           </div>
         </div>
       </section>
 
       <section
         id="apresentacao"
-        className="py-20 px-20 bg-gradient-to-r from-black via-gray-900 to-black text-white"
+        className="py-20 px-20 bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white"
       >
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold mb-4">
@@ -350,12 +301,15 @@ export default function App() {
         </div>
       </section>
 
-      <section id="equipe" className="pt-20  bg-gray-50">
+      <section
+        id="equipe"
+        className="pt-20 bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white"
+      >
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Nossa Equipe
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Conheça o grupo de profissionais que faz a Selo Contabilidade ser
             referência em transparência, inovação e dedicação ao crescimento da
             sua empresa.
@@ -366,7 +320,7 @@ export default function App() {
           <img
             src={grupoFuncionarios}
             alt="Equipe Selo Contabilidade"
-            className=" shadow-lg   w-full object-cover h-[80vh] transition-transform duration-500"
+            className="shadow-lg w-full object-cover h-[80vh] transition-transform duration-500 rounded-xl"
           />
         </div>
       </section>
@@ -401,13 +355,13 @@ export default function App() {
 
       <section
         id="parceiros"
-        className="py-20 px-[8%] bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 text-gray-900"
+        className="py-20 px-[8%] bg-gradient-to-r from-black via-gray-900 to-black text-white"
       >
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Nossos Parceiros
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Trabalhamos lado a lado com empresas líderes que compartilham nossos
             valores de{" "}
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-semibold">
@@ -422,62 +376,62 @@ export default function App() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-xl transition">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
               alt="Amazon"
               className="h-8 md:h-10 object-contain mb-4"
             />
-            <h3 className="text-lg font-bold text-gray-900">Amazon</h3>
-            <p className="text-gray-600 text-sm mt-2 text-center">
+            <h3 className="text-lg font-bold text-white">Amazon</h3>
+            <p className="text-gray-400 text-sm mt-2 text-center">
               Parceiro em soluções digitais e tecnologia.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-xl transition">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
               alt="Apple"
               className="h-8 md:h-10 object-contain mb-4"
             />
-            <h3 className="text-lg font-bold text-gray-900">Apple</h3>
-            <p className="text-gray-600 text-sm mt-2 text-center">
+            <h3 className="text-lg font-bold text-white">Apple</h3>
+            <p className="text-gray-400 text-sm mt-2 text-center">
               Inovação e design aplicados ao mundo corporativo.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-xl transition">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
               alt="Microsoft"
               className="h-8 md:h-10 object-contain mb-4"
             />
-            <h3 className="text-lg font-bold text-gray-900">Microsoft</h3>
-            <p className="text-gray-600 text-sm mt-2 text-center">
+            <h3 className="text-lg font-bold text-white">Microsoft</h3>
+            <p className="text-gray-400 text-sm mt-2 text-center">
               Parceiro estratégico em soluções corporativas e cloud.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-xl transition">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-amber-500/30 transition">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
               alt="Google"
               className="h-8 md:h-10 object-contain mb-4"
             />
-            <h3 className="text-lg font-bold text-gray-900">Google</h3>
-            <p className="text-gray-600 text-sm mt-2 text-center">
+            <h3 className="text-lg font-bold text-white">Google</h3>
+            <p className="text-gray-400 text-sm mt-2 text-center">
               Parceiro em inteligência de dados e inovação digital.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-100 py-16">
+      <section className="bg-gradient-to-r from-black via-gray-900 to-black py-16 text-white">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl font-extrabold mb-6 text-center bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Entre em Contato
           </h2>
-          <p className="text-lg text-gray-700 mb-10 text-center max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 mb-10 text-center max-w-2xl mx-auto">
             Preencha o formulário abaixo e nossa equipe retornará o contato por
             e-mail o mais rápido possível.
           </p>
@@ -485,43 +439,43 @@ export default function App() {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="bg-white shadow-lg rounded-lg p-8 space-y-6"
+            className="bg-gray-800 shadow-lg rounded-lg p-8 space-y-6"
           >
             <div>
-              <label className="block text-gray-700 font-semibold mb-2">
+              <label className="block text-gray-300 font-semibold mb-2">
                 Nome
               </label>
               <input
                 type="text"
                 name="user_name"
                 placeholder="Seu nome"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full border border-gray-600 rounded-lg px-4 py-2 bg-black text-white focus:outline-none focus:ring-2 focus:ring-[#cea664]"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-semibold mb-2">
+              <label className="block text-gray-300 font-semibold mb-2">
                 E-mail
               </label>
               <input
                 type="email"
                 name="user_email"
                 placeholder="seuemail@exemplo.com"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full border border-gray-600 rounded-lg px-4 py-2 bg-black text-white focus:outline-none focus:ring-2 focus:ring-[#cea664]"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-semibold mb-2">
+              <label className="block text-gray-300 font-semibold mb-2">
                 Mensagem
               </label>
               <textarea
                 name="message"
                 rows="5"
                 placeholder="Digite sua mensagem..."
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full border border-gray-600 rounded-lg px-4 py-2 bg-black text-white focus:outline-none focus:ring-2 focus:ring-[#cea664]"
                 required
               ></textarea>
             </div>

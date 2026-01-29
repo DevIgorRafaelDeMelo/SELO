@@ -14,6 +14,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaMapMarkerAlt,
+  FaChartLine,
+  FaFileInvoiceDollar,
 } from "react-icons/fa";
 import Header from "./Conponentes/Header";
 
@@ -45,8 +47,8 @@ export default function Servicos() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10">
-          <div className="bg-gray-800 rounded-xl shadow-lg p-8  hover:shadow-amber-500/30 transition-transform duration-300">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+          <div className="bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-amber-500/30 transition-transform duration-300">
             <FaBook className="h-14 w-14 text-[#cea664] mb-4" />
             <h3 className="text-xl font-bold mb-3">Escrituração Contábil</h3>
             <p className="text-gray-400 mb-4">
@@ -54,13 +56,13 @@ export default function Servicos() {
               e conformidade legal.
             </p>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li> Lançamentos completos</li>
-              <li> Demonstrações atualizadas</li>
-              <li> Conformidade fiscal</li>
+              <li>Lançamentos completos</li>
+              <li>Demonstrações atualizadas</li>
+              <li>Conformidade fiscal</li>
             </ul>
           </div>
 
-          <div className="bg-gray-800 rounded-xl shadow-lg p-8  hover:shadow-amber-500/30 transition-transform duration-300">
+          <div className="bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-amber-500/30 transition-transform duration-300">
             <FaBalanceScale className="h-14 w-14 text-[#cea664] mb-4" />
             <h3 className="text-xl font-bold mb-3">Consultoria Fiscal</h3>
             <p className="text-gray-400 mb-4">
@@ -68,13 +70,13 @@ export default function Servicos() {
               fiscal.
             </p>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li> Planejamento personalizado</li>
-              <li> Obrigações fiscais</li>
-              <li> Redução de riscos</li>
+              <li>Planejamento personalizado</li>
+              <li>Obrigações fiscais</li>
+              <li>Redução de riscos</li>
             </ul>
           </div>
 
-          <div className="bg-gray-800 rounded-xl shadow-lg p-8  hover:shadow-amber-500/30 transition-transform duration-300">
+          <div className="bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-amber-500/30 transition-transform duration-300">
             <FaUsersCog className="h-14 w-14 text-[#cea664] mb-4" />
             <h3 className="text-xl font-bold mb-3">Folha de Pagamento</h3>
             <p className="text-gray-400 mb-4">
@@ -82,18 +84,54 @@ export default function Servicos() {
               tranquilidade para sua equipe.
             </p>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li> Cálculo de salários</li>
-              <li> Emissão de holerites</li>
-              <li> Gestão de benefícios</li>
+              <li>Cálculo de salários</li>
+              <li>Emissão de holerites</li>
+              <li>Gestão de benefícios</li>
             </ul>
+          </div>
+
+          <div className="col-span-3 flex justify-center gap-10">
+            <div className="bg-gray-800 rounded-xl w-1/2 shadow-lg p-8 flex flex-col items-center text-center hover:shadow-amber-500/30 transition-transform duration-300">
+              <FaChartLine className="h-14 w-14 text-[#cea664] mb-4" />
+              <h3 className="text-xl font-bold mb-3">
+                Consultoria Empresarial
+              </h3>
+              <p className="text-gray-400 mb-4">
+                Apoio estratégico para melhorar processos, reduzir custos e
+                aumentar a eficiência organizacional.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>Diagnóstico financeiro e organizacional</li>
+                <li>Estruturação de processos e rotinas</li>
+                <li>Planejamento estratégico</li>
+                <li>Redução de custos</li>
+                <li>Implementação de melhorias</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-800 rounded-xl w-1/2 shadow-lg p-8 flex flex-col items-center text-center hover:shadow-amber-500/30 transition-transform duration-300">
+              <FaFileInvoiceDollar className="h-14 w-14 text-[#cea664] mb-4" />
+              <h3 className="text-xl font-bold mb-3">
+                Respaldo Tributário para Pessoas Físicas
+              </h3>
+              <p className="text-gray-400 mb-4">
+                Orientação completa para manter sua regularidade fiscal e evitar
+                autuações.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>Apuração de ganhos com criptoativos</li>
+                <li>Suporte para investimentos no Brasil e exterior</li>
+                <li>Apuração de GCAP, Carnê-Leão e IRPF</li>
+                <li>Prevenção de autuações fiscais</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Apresentação Section */}
       <section
         id="apresentacao"
-        className="py-20 px-[8%] bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100 text-gray-900"
+        className="py-20 px-[8%] bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white"
       >
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold mb-4">
@@ -103,7 +141,7 @@ export default function Servicos() {
             </span>
             ?
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             Conheça os diferenciais que tornam nossa parceria estratégica para o
             sucesso da sua empresa.
           </p>
@@ -139,16 +177,16 @@ export default function Servicos() {
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white text-gray-900 rounded-xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
+              className="bg-gray-800 text-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
             >
-              <div className="text-[#956930] mb-4">{item.icon}</div>
+              <div className="text-[#cea664] mb-4">{item.icon}</div>
               <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-600">{item.desc}</p>
+              <p className="text-sm text-gray-300">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
-      <footer className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-12">
+      <footer className="bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white py-12">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10">
           <div className="text-center md:text-left space-y-2">
             <img
@@ -162,7 +200,7 @@ export default function Servicos() {
           </div>
 
           <nav className="flex flex-col md:flex-col justify-center items-start gap-3 text-sm font-light">
-            <a href="#sobre" className="hover:text-amber-400 transition-colors">
+            <a href="#sobre" className="hover:text-[#cea664] transition-colors">
               Sobre
             </a>
             <a
@@ -184,6 +222,7 @@ export default function Servicos() {
               Contato
             </a>
           </nav>
+
           <div className="text-center md:text-left space-y-2">
             <h4 className="text-sm font-semibold text-[#cea664] flex items-center gap-2">
               <FaMapMarkerAlt /> Endereço
