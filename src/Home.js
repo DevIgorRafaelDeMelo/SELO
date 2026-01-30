@@ -398,7 +398,7 @@ export default function App() {
         </div>
 
         <div className="flex flex-col items-center gap-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 justify-items-center">
             {/* Card Darlan */}
             <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-full max-w-xs transform transition-transform duration-300">
               <img
@@ -437,7 +437,7 @@ export default function App() {
                 href="mailto:isabella@empresa.com"
                 className="text-sm block mt-2"
               >
-                isabella@empresa.com
+                elocontabilfinanceiro@gmail.com
               </a>
             </div>
           </div>
