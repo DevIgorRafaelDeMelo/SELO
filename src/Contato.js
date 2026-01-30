@@ -35,7 +35,7 @@ export default function Contato() {
       className=" pt-20  bg-gradient-to-r from-black via-gray-900 to-black text-white"
     >
       <a
-        href="https://wa.me/5599999999999"
+        href="https://wa.me/5551999777981"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-100 bottom-10 right-4 inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
@@ -178,7 +178,7 @@ export default function Contato() {
             </a>
 
             <a
-              href="https://wa.link/l95yt6"
+              href="https://wa.me/5551999777981"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"

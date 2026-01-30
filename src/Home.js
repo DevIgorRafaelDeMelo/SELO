@@ -35,6 +35,7 @@ import adm5 from "./assets/adm5.jpg";
 import adm7 from "./assets/1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 export default function App() {
   const form = useRef();
@@ -67,7 +68,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <a
-        href="https://wa.me/elosolucoesempresariais"
+        href="https://wa.me/5551999777981"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-100 bottom-10 right-4 inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
@@ -86,21 +87,50 @@ export default function App() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
-        <div className="relative z-10 flex flex-col items-start text-left gap-8 px-4 sm:px-8 md:px-20 justify-center min-h-screen animate-fadeIn">
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight font-sans">
+        <motion.div
+          initial={{ x: -200, opacity: 0 }} // começa fora da tela à esquerda
+          animate={{ x: 0, opacity: 1 }} // desliza para posição correta
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="relative z-10 flex flex-col items-start text-left gap-8 px-4 sm:px-8 md:px-20 justify-center min-h-screen"
+        >
+          {/* Título */}
+          <motion.h2
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0 }}
+            className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight font-sans"
+          >
             <span className="text-white">Elo</span>{" "}
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
               Soluções Empresariais
             </span>
-          </h2>
+          </motion.h2>
 
-          <div className="w-20 sm:w-24 h-1 bg-[#956930] rounded-full"></div>
+          {/* Linha decorativa */}
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            className="w-20 sm:w-24 h-1 bg-[#956930] rounded-full"
+          ></motion.div>
 
-          <h3 className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-serif italic max-w-xl">
+          {/* Subtítulo */}
+          <motion.h3
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+            className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-serif italic max-w-xl"
+          >
             Inovação que conecta resultados
-          </h3>
+          </motion.h3>
 
-          <p className="leading-relaxed text-base sm:text-lg md:text-xl font-light max-w-xl text-gray-400">
+          {/* Texto */}
+          <motion.p
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+            className="leading-relaxed text-base sm:text-lg md:text-xl font-light max-w-xl text-gray-400"
+          >
             Gestão contábil e financeira com{" "}
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-semibold">
               transparência
@@ -113,17 +143,23 @@ export default function App() {
             <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent font-medium italic">
               Parceiros estratégicos para o sucesso da sua empresa
             </span>
-          </p>
+          </motion.p>
 
-          <div className="mt-6">
+          {/* Botão */}
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+            className="mt-6"
+          >
             <a
-              href="#contato"
+              href="https://wa.me/5551999777981"
               className="px-5 sm:px-6 py-3 bg-[#956930] text-black font-semibold rounded-lg shadow-lg hover:opacity-90 transition-all duration-300"
             >
               Fale Conosco
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       <section
@@ -765,7 +801,7 @@ export default function App() {
             </a>
 
             <a
-              href="https://wa.link/l95yt6"
+              href="https://wa.me/5551999777981"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
