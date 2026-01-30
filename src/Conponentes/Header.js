@@ -17,8 +17,15 @@ export default function Header() {
 
   return (
     <header className="bg-black/60 fixed w-full top-0 z-40 shadow-lg backdrop-blur-sm">
-      <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-        <img src={logo} alt="Logo" className="h-6 m-4 w-auto drop-shadow-md" />
+      <div className="container m-auto px-6 py-3 flex justify-between items-center">
+        <NavLink to="/" className={linkClasses} onClick={handleLinkClick}>
+          <img
+            src={logo}
+            to="/"
+            alt="Logo"
+            className="h-6 m-4 w-auto drop-shadow-md"
+          />
+        </NavLink>
 
         <nav className="hidden md:flex space-x-8 font-light tracking-wide">
           <NavLink to="/" className={linkClasses} onClick={handleLinkClick}>
@@ -79,7 +86,7 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden text-center font-light tracking-wide animate-slide-down rounded-b-xl shadow-lg">
+        <div className="md:hidden text-center w-[100vh] font-light tracking-wide animate-slide-down rounded-b-xl shadow-lg">
           <NavLink
             to="/"
             className={({ isActive }) =>

@@ -398,13 +398,13 @@ export default function App() {
         </div>
 
         <div className="flex flex-col items-center gap-10">
-          <div className="flex justify-center gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
             {/* Card Darlan */}
-            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-full max-w-xs transform transition-transform duration-300">
               <img
                 src={Darlan}
                 alt="Gerente"
-                className="w-42 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+                className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-[#cea664] shadow-md"
               />
               <h3 className="text-lg font-semibold text-[#cea664]">
                 Darlan M.
@@ -414,18 +414,18 @@ export default function App() {
               </p>
               <a
                 href="mailto:darlan@empresa.com"
-                className="text-sm   block mt-2"
+                className="text-sm block mt-2"
               >
                 darlan@empresa.com
               </a>
             </div>
 
             {/* Card Isabella */}
-            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-full max-w-xs transform transition-transform duration-300">
               <img
                 src={Isa}
                 alt="Gerente"
-                className="w-42 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+                className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-[#cea664] shadow-md"
               />
               <h3 className="text-lg font-semibold text-[#cea664]">
                 Isabella C.
@@ -435,7 +435,7 @@ export default function App() {
               </p>
               <a
                 href="mailto:isabella@empresa.com"
-                className="text-sm   block mt-2"
+                className="text-sm block mt-2"
               >
                 isabella@empresa.com
               </a>
