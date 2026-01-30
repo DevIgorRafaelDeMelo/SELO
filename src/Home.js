@@ -32,7 +32,6 @@ import adm2 from "./assets/ADM2.jpg";
 import adm3 from "./assets/ADM3.jpg";
 import adm4 from "./assets/2.png";
 import adm5 from "./assets/adm5.jpg";
-import adm6 from "./assets/3.png";
 import adm7 from "./assets/1.png";
 
 export default function App() {
