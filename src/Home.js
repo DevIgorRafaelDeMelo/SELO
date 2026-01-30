@@ -22,7 +22,7 @@ import Branding from "./assets/Branding.png";
 import Estilize from "./assets/Estilze.png";
 import Pino from "./assets/Pino.png";
 import Savale from "./assets/savale.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "./assets/Simbulo.png";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
@@ -33,10 +33,16 @@ import adm3 from "./assets/ADM3.jpg";
 import adm4 from "./assets/2.png";
 import adm5 from "./assets/adm5.jpg";
 import adm7 from "./assets/1.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function App() {
   const form = useRef();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -133,11 +139,12 @@ export default function App() {
             com experiência, tecnologia e transparência.
           </p>
         </div>
-        <br />
-        <br />
-        <br />
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* Card 1 */}
+        <div
+          className="grid md:grid-cols-2 gap-8 items-center"
+          data-aos="flip-left"
+        >
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
@@ -157,9 +164,12 @@ export default function App() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* Card 2 */}
+        <div
+          className="grid md:grid-cols-2 gap-8 items-center"
+          data-aos="flip-right"
+        >
           <div className="flex justify-center">
-            {" "}
             <FaBook className="h-16 w-16 text-[#cea664]" />
           </div>
           <div className="flex flex-col items-center justify-center h-full text-center">
@@ -177,7 +187,11 @@ export default function App() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* Card 3 */}
+        <div
+          className="grid md:grid-cols-2 gap-8 items-center"
+          data-aos="flip-left"
+        >
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
@@ -197,7 +211,11 @@ export default function App() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* Card 4 */}
+        <div
+          className="grid md:grid-cols-2 gap-8 items-center"
+          data-aos="flip-right"
+        >
           <div className="flex justify-center">
             <FaChartLine className="h-16 w-16 text-[#cea664]" />
           </div>
@@ -216,7 +234,11 @@ export default function App() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* Card 5 */}
+        <div
+          className="grid md:grid-cols-2 gap-8 items-center"
+          data-aos="flip-left"
+        >
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h3 className="text-2xl font-bold mb-3 flex items-center gap-2 justify-center">
               <span className="w-2 h-6 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] inline-block rounded"></span>
@@ -257,8 +279,12 @@ export default function App() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-5 lg:grid-cols-5  gap-10">
-          <div className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left">
+        <div className="grid md:grid-cols-5 lg:grid-cols-5 gap-10">
+          {/* Card 1 */}
+          <div
+            className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
+            data-aos="flip-left"
+          >
             <FaRegLightbulb size={32} className="mb-4 text-black" />
             <h3 className="text-lg font-bold mb-2">Soluções Personalizadas</h3>
             <p className="text-sm">
@@ -266,7 +292,11 @@ export default function App() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left">
+          {/* Card 2 */}
+          <div
+            className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
+            data-aos="flip-right"
+          >
             <FaUsers size={32} className="mb-4 text-black" />
             <h3 className="text-lg font-bold mb-2">
               Profissionais Experientes
@@ -277,7 +307,11 @@ export default function App() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left">
+          {/* Card 3 */}
+          <div
+            className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
+            data-aos="flip-left"
+          >
             <FaBalanceScale size={32} className="mb-4 text-black" />
             <h3 className="text-lg font-bold mb-2">Eficiência Operacional</h3>
             <p className="text-sm">
@@ -285,7 +319,12 @@ export default function App() {
               empresa.
             </p>
           </div>
-          <div className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left">
+
+          {/* Card 4 */}
+          <div
+            className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
+            data-aos="flip-right"
+          >
             <FaShieldAlt size={32} className="mb-4 text-black" />
             <h3 className="text-lg font-bold mb-2">Integridade</h3>
             <p className="text-sm">
@@ -293,7 +332,11 @@ export default function App() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left">
+          {/* Card 5 */}
+          <div
+            className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
+            data-aos="flip-left"
+          >
             <FaRocket size={32} className="mb-4 text-black" />
             <h3 className="text-lg font-bold mb-2">Respostas Rápidas</h3>
             <p className="text-sm">
