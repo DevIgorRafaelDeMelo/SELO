@@ -404,7 +404,7 @@ export default function App() {
               <img
                 src={Darlan}
                 alt="Gerente"
-                className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+                className="w-42 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
               />
               <h3 className="text-lg font-semibold text-[#cea664]">
                 Darlan M.
@@ -425,7 +425,7 @@ export default function App() {
               <img
                 src={Isa}
                 alt="Gerente"
-                className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+                className="w-42   object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
               />
               <h3 className="text-lg font-semibold text-[#cea664]">
                 Isabella C.
