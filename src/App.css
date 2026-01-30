@@ -18,7 +18,6 @@
 }
 
 .logo-img {
-  height: 80px; /* tamanho padronizado */
-  object-fit: contain; /* mantém proporção */
-  filter: brightness(0) saturate(100%) invert(70%) contrast(90%);
+  height: 80px;
+  object-fit: contain;
 }

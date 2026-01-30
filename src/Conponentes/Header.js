@@ -86,7 +86,7 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden text-center w-[100vh] font-light tracking-wide animate-slide-down rounded-b-xl shadow-lg">
+        <div className="md:hidden text-center  font-light tracking-wide animate-slide-down rounded-b-xl shadow-lg">
           <NavLink
             to="/"
             className={({ isActive }) =>

@@ -1,30 +1,15 @@
 import "./App.css";
+import React, { useRef, useState, useEffect } from "react";
 import Hero from "./assets/top-view-workspace-with-notepad-copy-space.jpg";
-import { FaBook, FaUsersCog } from "react-icons/fa";
-import {
-  FaRegLightbulb,
-  FaUsers,
-  FaBalanceScale,
-  FaShieldAlt,
-  FaRocket,
-} from "react-icons/fa";
 import Darlan from "./assets/Darlan.png";
 import Isa from "./assets/Isa.png";
-import {
-  FaInstagram,
-  FaWhatsapp,
-  FaMapMarkerAlt,
-  FaChartLine,
-  FaFileInvoiceDollar,
-} from "react-icons/fa";
 import Fada from "./assets/Fada.png";
 import Branding from "./assets/Branding.png";
 import Estilize from "./assets/Estilze.png";
-import Pino from "./assets/Pino.png";
+import Pino from "./assets/DF.PNG";
+import Leomar from "./assets/Leomar.png";
 import Savale from "./assets/savale.png";
-import { useState, useEffect } from "react";
 import logo from "./assets/Simbulo.png";
-import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Header from "./Conponentes/Header";
 import adm1 from "./assets/ADM1.jpg";
@@ -36,6 +21,20 @@ import adm7 from "./assets/1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import {
+  FaInstagram,
+  FaWhatsapp,
+  FaMapMarkerAlt,
+  FaChartLine,
+  FaFileInvoiceDollar,
+  FaRegLightbulb,
+  FaUsers,
+  FaBalanceScale,
+  FaShieldAlt,
+  FaRocket,
+  FaBook,
+  FaUsersCog,
+} from "react-icons/fa";
 
 export default function App() {
   const form = useRef();
@@ -88,12 +87,11 @@ export default function App() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
         <motion.div
-          initial={{ x: -200, opacity: 0 }} // começa fora da tela à esquerda
-          animate={{ x: 0, opacity: 1 }} // desliza para posição correta
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="relative z-10 flex flex-col items-start text-left gap-8 px-4 sm:px-8 md:px-20 justify-center min-h-screen"
         >
-          {/* Título */}
           <motion.h2
             initial={{ x: -200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -106,7 +104,6 @@ export default function App() {
             </span>
           </motion.h2>
 
-          {/* Linha decorativa */}
           <motion.div
             initial={{ x: -200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -114,7 +111,6 @@ export default function App() {
             className="w-20 sm:w-24 h-1 bg-[#956930] rounded-full"
           ></motion.div>
 
-          {/* Subtítulo */}
           <motion.h3
             initial={{ x: -200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -124,7 +120,6 @@ export default function App() {
             Inovação que conecta resultados
           </motion.h3>
 
-          {/* Texto */}
           <motion.p
             initial={{ x: -200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -145,7 +140,6 @@ export default function App() {
             </span>
           </motion.p>
 
-          {/* Botão */}
           <motion.div
             initial={{ x: -200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -176,7 +170,6 @@ export default function App() {
           </p>
         </div>
 
-        {/* Card 1 */}
         <div
           className="grid md:grid-cols-2 gap-8 items-center"
           data-aos="flip-left"
@@ -200,7 +193,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Card 2 */}
         <div
           className="grid md:grid-cols-2 gap-8 items-center"
           data-aos="flip-right"
@@ -223,7 +215,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Card 3 */}
         <div
           className="grid md:grid-cols-2 gap-8 items-center"
           data-aos="flip-left"
@@ -247,7 +238,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Card 4 */}
         <div
           className="grid md:grid-cols-2 gap-8 items-center"
           data-aos="flip-right"
@@ -270,7 +260,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Card 5 */}
         <div
           className="grid md:grid-cols-2 gap-8 items-center"
           data-aos="flip-left"
@@ -316,7 +305,6 @@ export default function App() {
         </div>
 
         <div className="grid md:grid-cols-5 lg:grid-cols-5 gap-10">
-          {/* Card 1 */}
           <div
             className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
             data-aos="flip-left"
@@ -328,7 +316,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Card 2 */}
           <div
             className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
             data-aos="flip-right"
@@ -343,7 +330,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Card 3 */}
           <div
             className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
             data-aos="flip-left"
@@ -356,7 +342,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Card 4 */}
           <div
             className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
             data-aos="flip-right"
@@ -368,7 +353,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Card 5 */}
           <div
             className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:scale-105 transition-transform duration-500"
             data-aos="flip-left"
@@ -399,7 +383,6 @@ export default function App() {
 
         <div className="flex flex-col items-center gap-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 justify-items-center">
-            {/* Card Darlan */}
             <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-full max-w-xs transform transition-transform duration-300">
               <img
                 src={Darlan}
@@ -416,11 +399,10 @@ export default function App() {
                 href="mailto:darlan@empresa.com"
                 className="text-sm block mt-2"
               >
-                darlan@empresa.com
+                elocontabilcont1@gmail.com
               </a>
             </div>
 
-            {/* Card Isabella */}
             <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-full max-w-xs transform transition-transform duration-300">
               <img
                 src={Isa}
@@ -463,7 +445,6 @@ export default function App() {
                 isabella@empresa.com
               </a>
             </div>
-
             <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
               <img
                 src={adm2}
@@ -653,49 +634,45 @@ export default function App() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-2">
+        <div className="grid md:grid-cols-3 lg:grid-cols-3 md:w-[80vh] m-auto gap-2">
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Fada} alt="Amazon" className="logo-img mb-4" />
             <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-              Fáda
-              <br />
-              Dos <br /> Florais
+              Fáda Dos Florais
             </h3>
           </div>
 
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Branding} alt="Apple" className="logo-img mb-4" />
             <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-              Branding <br />
-              Que
-              <br /> comunica
+              Branding Que comunica
             </h3>
           </div>
 
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Pino} alt="Microsoft" className="logo-img mb-4" />
             <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-              Pino
-              <br />
-              Desde 1964
+              DF & K
             </h3>
           </div>
 
           <div className="bg-gradient-to-b  from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Savale} alt="Google" className="logo-img mb-4" />
             <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-              Savale
-              <br />
-              Imoveis
+              Savale Imoveis
             </h3>
           </div>
 
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Estilize} alt="Google" className="logo-img mb-4" />
             <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
-              Estilize
-              <br />
-              Moveis
+              Estilize Moveis
+            </h3>
+          </div>
+          <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
+            <img src={Leomar} alt="Google" className="logo-img mb-4" />
+            <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
+              Leomar
             </h3>
           </div>
         </div>
