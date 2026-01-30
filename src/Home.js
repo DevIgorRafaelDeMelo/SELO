@@ -8,7 +8,8 @@ import {
   FaShieldAlt,
   FaRocket,
 } from "react-icons/fa";
-import grupoFuncionarios from "./assets/IMG_8332.jpg";
+import Darlan from "./assets/Darlan.png";
+import Isa from "./assets/Isa.png";
 import {
   FaInstagram,
   FaWhatsapp,
@@ -26,6 +27,13 @@ import logo from "./assets/Simbulo.png";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Header from "./Conponentes/Header";
+import adm1 from "./assets/ADM1.jpg";
+import adm2 from "./assets/ADM2.jpg";
+import adm3 from "./assets/ADM3.jpg";
+import adm4 from "./assets/2.png";
+import adm5 from "./assets/adm5.jpg";
+import adm6 from "./assets/3.png";
+import adm7 from "./assets/1.png";
 
 export default function App() {
   const form = useRef();
@@ -115,7 +123,7 @@ export default function App() {
 
       <section
         id="servicos"
-        className="py-16 px-[10%] bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white space-y-20"
+        className="py-16 px-[10%] bg-gradient-to-r from-black via-gray-900 to-black text-white space-y-20"
       >
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-3 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -234,7 +242,7 @@ export default function App() {
 
       <section
         id="apresentacao"
-        className="py-20 px-20 bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white"
+        className="py-20 px-20 bg-gradient-to-r from-black via-gray-900 to-black text-white"
       >
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
@@ -298,7 +306,7 @@ export default function App() {
 
       <section
         id="equipe"
-        className="pt-20 bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white"
+        className="py-20 bg-gradient-to-r from-black via-gray-900 to-black text-white"
       >
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -311,13 +319,209 @@ export default function App() {
           </p>
         </div>
 
-        <div className="flex justify-center">
-          <img
-            src={grupoFuncionarios}
-            alt="Equipe Selo Contabilidade"
-            className="shadow-lg w-full object-cover transition-transform duration-500
-                 h-auto md:h-[80vh]"
-          />
+        <div className="flex flex-col items-center gap-10">
+          <div className="flex justify-center gap-10">
+            {/* Card Darlan */}
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={Darlan}
+                alt="Gerente"
+                className="w-42 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Darlan M.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:darlan@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                darlan@empresa.com
+              </a>
+            </div>
+
+            {/* Card Isabella */}
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={Isa}
+                alt="Gerente"
+                className="w-42 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>
+          </div>
+          <br />
+
+          <div className="flex justify-center gap-10 flex-wrap">
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={adm1}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>
+
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={adm2}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={adm3}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={adm4}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>
+          </div>
+          <div className="flex justify-center gap-10 flex-wrap">
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={adm5}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>{" "}
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={adm7}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>{" "}
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={Isa}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>{" "}
+            <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-xl p-6 text-center w-56 transform  transition-transform duration-300">
+              <img
+                src={Isa}
+                alt="Gerente"
+                className="w-32 object-cover  mx-auto mb-4 border-4 border-[#cea664] shadow-md"
+              />
+              <h3 className="text-lg font-semibold text-[#cea664]">
+                Isabella C.
+              </h3>
+              <p className="text-sm text-gray-300 italic">
+                Sócio Administrador
+              </p>
+              <a
+                href="mailto:isabella@empresa.com"
+                className="text-sm   block mt-2"
+              >
+                isabella@empresa.com
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -339,7 +543,7 @@ export default function App() {
           </p>
 
           <a
-            href="https://instagram.com/seuusuario"
+            href="https://www.instagram.com/elosolucoesempresariais?igsh=MTN5eWU4Y3dqOXJleg%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] text-black font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-amber-500 transition-colors duration-300"
@@ -372,7 +576,6 @@ export default function App() {
         </div>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-2">
-          {/* Card 1 */}
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Fada} alt="Amazon" className="logo-img mb-4" />
             <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -382,7 +585,6 @@ export default function App() {
             </h3>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Branding} alt="Apple" className="logo-img mb-4" />
             <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -392,7 +594,6 @@ export default function App() {
             </h3>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Pino} alt="Microsoft" className="logo-img mb-4" />
             <h3 className="text-lg text-center font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -402,7 +603,6 @@ export default function App() {
             </h3>
           </div>
 
-          {/* Card 4 */}
           <div className="bg-gradient-to-b  from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Savale} alt="Google" className="logo-img mb-4" />
             <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -412,7 +612,6 @@ export default function App() {
             </h3>
           </div>
 
-          {/* Card 5 */}
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-[#cea664] rounded-2xl shadow-lg p-8 flex flex-col items-center transform  hover:shadow-amber-500/30 transition duration-300">
             <img src={Estilize} alt="Google" className="logo-img mb-4" />
             <h3 className="text-lg font-bold bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -423,6 +622,7 @@ export default function App() {
           </div>
         </div>
       </section>
+
       <section className="bg-gradient-to-r from-black via-gray-900 to-black py-16 text-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
@@ -490,43 +690,17 @@ export default function App() {
       </section>
 
       <footer className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-12">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
           <div className="text-center md:text-left space-y-2">
             <img
               src={logo}
               alt="Logo Minha Empresa"
-              className="h-10 w-auto drop-shadow-md"
+              className="h-6 w-auto drop-shadow-md"
             />
-            <p className="text-gray-400 ps-4 text-sm">
-              Parceiros estratégicos para o sucesso da sua empresa.
-            </p>
           </div>
 
-          <nav className="flex flex-col md:flex-col justify-center items-start gap-3 text-sm font-light">
-            <a href="#sobre" className="hover:text-amber-400 transition-colors">
-              Sobre
-            </a>
-            <a
-              href="#servicos"
-              className="hover:text-[#cea664] transition-colors"
-            >
-              Serviços
-            </a>
-            <a
-              href="#solucoes"
-              className="hover:text-[#cea664] transition-colors"
-            >
-              Soluções
-            </a>
-            <a
-              href="#contato"
-              className="hover:text-[#cea664] transition-colors"
-            >
-              Contato
-            </a>
-          </nav>
-          <div className="text-center md:text-left space-y-2">
-            <h4 className="text-sm font-semibold text-[#cea664] flex items-center gap-2">
+          <div className="text-center md:text-left space-y-2 ps-8">
+            <h4 className="text-sm font-semibold text-[#cea664]  flex items-center gap-2">
               <FaMapMarkerAlt /> Endereço
             </h4>
             <p className="text-gray-400 text-sm">
@@ -540,7 +714,7 @@ export default function App() {
 
           <div className="flex justify-center md:justify-end gap-4">
             <a
-              href="https://www.instagram.com/elosolucoesempresariais?igsh=Y3h4N25taWx0dzZi"
+              href="https://www.instagram.com/elosolucoesempresariais?igsh=MTN5eWU4Y3dqOXJleg%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
@@ -549,7 +723,7 @@ export default function App() {
             </a>
 
             <a
-              href="wa.me/elosolucoesempresariais"
+              href="https://wa.link/l95yt6"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"

@@ -45,7 +45,7 @@ export default function Contato() {
       </a>
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="text-center mb-16 pt-20 px-[8%]">
-        <h2 className="text-4xl font-extrabold mb-4">
+        <h2 className="text-4xl font-bold mb-4">
           Entre em{" "}
           <span className="bg-gradient-to-r from-[#cea664] via-[#6f5431] to-[#956930] bg-clip-text text-transparent">
             Contato
@@ -145,43 +145,17 @@ export default function Contato() {
       </div>
 
       <footer className="text-white py-12 pt-40 px-[8%]">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
           <div className="text-center md:text-left space-y-2">
             <img
               src={logo}
               alt="Logo Minha Empresa"
-              className="h-10 w-auto drop-shadow-md"
+              className="h-6 w-auto drop-shadow-md"
             />
-            <p className="text-gray-400 ps-4 text-sm">
-              Parceiros estratégicos para o sucesso da sua empresa.
-            </p>
           </div>
 
-          <nav className="flex flex-col md:flex-col justify-center items-start gap-3 text-sm font-light">
-            <a href="#sobre" className="hover:text-amber-400 transition-colors">
-              Sobre
-            </a>
-            <a
-              href="#servicos"
-              className="hover:text-[#cea664] transition-colors"
-            >
-              Serviços
-            </a>
-            <a
-              href="#solucoes"
-              className="hover:text-[#cea664] transition-colors"
-            >
-              Soluções
-            </a>
-            <a
-              href="#contato"
-              className="hover:text-[#cea664] transition-colors"
-            >
-              Contato
-            </a>
-          </nav>
-          <div className="text-center md:text-left space-y-2">
-            <h4 className="text-sm font-semibold text-[#cea664] flex items-center gap-2">
+          <div className="text-center md:text-left space-y-2 ps-8">
+            <h4 className="text-sm font-semibold text-[#cea664]  flex items-center gap-2">
               <FaMapMarkerAlt /> Endereço
             </h4>
             <p className="text-gray-400 text-sm">
@@ -195,7 +169,7 @@ export default function Contato() {
 
           <div className="flex justify-center md:justify-end gap-4">
             <a
-              href="https://www.instagram.com/elosolucoesempresariais?igsh=Y3h4N25taWx0dzZi"
+              href="https://www.instagram.com/elosolucoesempresariais?igsh=MTN5eWU4Y3dqOXJleg%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#cea664] transition-colors"
